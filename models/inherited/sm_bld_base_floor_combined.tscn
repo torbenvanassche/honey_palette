@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cmktr2ro3nda5"]
+
+[ext_resource type="PackedScene" uid="uid://b53x2faio571n" path="res://models/base/floor/SM_Bld_Base_Floor_Combined_01.glb" id="1_ghtft"]
+[ext_resource type="Material" uid="uid://7jjdhxlbupir" path="res://materials/color_filter/color_filter_floor_01.tres" id="3_g21vx"]
+
+[node name="SM_Bld_Base_Floor_Combined_012" instance=ExtResource("1_ghtft")]
+
+[node name="SM_Bld_Base_Floor_Combined_01" parent="." index="0"]
+material_override = ExtResource("3_g21vx")

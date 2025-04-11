@@ -1,0 +1,40 @@
+[gd_scene load_steps=10 format=3 uid="uid://dmncwx1rwhi5v"]
+
+[ext_resource type="PackedScene" uid="uid://4y48an0tl5uq" path="res://scenes/game_scene.tscn" id="1_pw63i"]
+[ext_resource type="PackedScene" uid="uid://cdk6hwb4hi2wc" path="res://player/player.tscn" id="2_7ykc4"]
+[ext_resource type="Material" uid="uid://chcl2tcqk3q35" path="res://materials/color_filter/color_filter_nature.tres" id="2_gubc5"]
+[ext_resource type="PackedScene" uid="uid://0gdq51qwx1mf" path="res://models/inherited/sm_plant.tscn" id="3_7ykc4"]
+[ext_resource type="Material" uid="uid://7jjdhxlbupir" path="res://materials/color_filter/color_filter_floor_01.tres" id="3_rt2n2"]
+[ext_resource type="Script" uid="uid://dj4tnmaljuw74" path="res://shaders/color_filter/color_filter.gd" id="4_pu3yx"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_pu3yx"]
+sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+
+[sub_resource type="Sky" id="Sky_gubc5"]
+sky_material = SubResource("ProceduralSkyMaterial_pu3yx")
+
+[sub_resource type="Environment" id="Environment_rt2n2"]
+background_mode = 2
+sky = SubResource("Sky_gubc5")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="main_scene" type="Node3D"]
+script = ExtResource("4_pu3yx")
+shaders = Array[ShaderMaterial]([ExtResource("2_gubc5"), ExtResource("3_rt2n2")])
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_rt2n2")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866024, -0.433016, 0.250001, 0, 0.499998, 0.866026, -0.500003, 0.749999, -0.43301, 0.00952053, 5.07071, 0.00390625)
+shadow_enabled = true
+
+[node name="Player" parent="." instance=ExtResource("2_7ykc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.18209, 0, 3.94789)
+
+[node name="Node3D" parent="." instance=ExtResource("1_pw63i")]
+
+[node name="SM_Plant_072" parent="." instance=ExtResource("3_7ykc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.78182, 0.00809082, 0.972363)

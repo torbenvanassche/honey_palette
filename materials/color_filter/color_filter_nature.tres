@@ -1,0 +1,12 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=4 uid="uid://chcl2tcqk3q35"]
+
+[ext_resource type="Shader" uid="uid://clgt0a45gbdju" path="res://shaders/color_filter/color_filter.tres" id="1_v004t"]
+[ext_resource type="Texture2D" uid="uid://5ejnbcuchqyf" path="res://textures/PolygonNature_01.png" id="2_y7grr"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_v004t")
+shader_parameter/albedo_texture = ExtResource("2_y7grr")
+shader_parameter/fallback_color = Color(0.344076, 0.344076, 0.344076, 1)
+shader_parameter/filter_colors = PackedVector4Array(0, 0, 0, 0)
+shader_parameter/palette_size = 1
