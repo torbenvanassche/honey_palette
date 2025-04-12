@@ -1,0 +1,37 @@
+[gd_scene load_steps=7 format=3 uid="uid://bincx4qt6baqh"]
+
+[ext_resource type="PackedScene" uid="uid://qpylbubwjsee" path="res://models/base/SM_Bld_Base_Stairwell_Wall_01.glb" id="1_v3fja"]
+[ext_resource type="PackedScene" uid="uid://h4wjnw7anmdh" path="res://models/base/SM_Bld_Stairs_02.glb" id="2_qau0j"]
+[ext_resource type="PackedScene" uid="uid://dfuvvxunrc2if" path="res://models/base/SM_Bld_Railing_Pillar_Straight_01.glb" id="3_f6as8"]
+[ext_resource type="PackedScene" uid="uid://l2wjf8e5wj8o" path="res://models/base/SM_Bld_Railing_Stairs_01.glb" id="4_0uhuw"]
+[ext_resource type="PackedScene" uid="uid://dyspvi08pt68a" path="res://models/base/SM_Bld_Railing_Stairs_02.glb" id="5_xg562"]
+[ext_resource type="PackedScene" uid="uid://cg0dqg5y406e4" path="res://models/base/SM_Bld_Railing_Rail_Stairs_01.glb" id="6_skouy"]
+
+[node name="stairs" type="Node3D"]
+
+[node name="SM_Bld_Base_Stairwell_Wall_013" parent="." instance=ExtResource("1_v3fja")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, 2.5)
+
+[node name="SM_Bld_Stairs_022" parent="." instance=ExtResource("2_qau0j")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2.5, 0, 0)
+
+[node name="SM_Bld_Stairs_023" parent="." instance=ExtResource("2_qau0j")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 5, 1.5, 0)
+
+[node name="SM_Bld_Railing_Pillar_Straight_012" parent="." instance=ExtResource("3_f6as8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0.0987141, 2.5)
+
+[node name="SM_Bld_Railing_Pillar_Straight_013" parent="." instance=ExtResource("3_f6as8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 3, 2.5)
+
+[node name="SM_Bld_Railing_Stairs_012" parent="." instance=ExtResource("4_0uhuw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, 2.5)
+
+[node name="SM_Bld_Railing_Stairs_022" parent="." instance=ExtResource("5_xg562")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 1.5, 2.5)
+
+[node name="SM_Bld_Railing_Rail_Stairs_012" parent="." instance=ExtResource("6_skouy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, 2.5)
+
+[node name="SM_Bld_Railing_Rail_Stairs_013" parent="." instance=ExtResource("6_skouy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 1.5, 2.5)
