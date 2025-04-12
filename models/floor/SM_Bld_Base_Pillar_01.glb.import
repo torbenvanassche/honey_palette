@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://h4wjnw7anmdh"
-path="res://.godot/imported/SM_Bld_Stairs_02.glb-26ef181b0b2bad91a846e9872cbc8b9d.scn"
+uid="uid://babsc2pya2ijk"
+path="res://.godot/imported/SM_Bld_Base_Pillar_01.glb-6bd3d406b31ee61d42ebe710de229027.scn"
 
 [deps]
 
-source_file="res://models/floor/SM_Bld_Stairs_02.glb"
-dest_files=["res://.godot/imported/SM_Bld_Stairs_02.glb-26ef181b0b2bad91a846e9872cbc8b9d.scn"]
+source_file="res://models/floor/SM_Bld_Base_Pillar_01.glb"
+dest_files=["res://.godot/imported/SM_Bld_Base_Pillar_01.glb-6bd3d406b31ee61d42ebe710de229027.scn"]
 
 [params]
 
@@ -36,14 +36,7 @@ _subresources={
 "materials": {
 "placeholder.026": {
 "use_external/enabled": true,
-"use_external/path": "uid://dg1ml8xindj24"
-}
-},
-"nodes": {
-"PATH:SM_Bld_Stairs_02": {
-"generate/physics": true,
-"physics/layer": 3,
-"physics/shape_type": 1
+"use_external/path": "uid://caqvbi5xsbcai"
 }
 }
 }

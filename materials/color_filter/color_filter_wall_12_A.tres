@@ -1,11 +1,17 @@
-[gd_resource type="ShaderMaterial" load_steps=2 format=4 uid="uid://chcl2tcqk3q35"]
+[gd_resource type="ShaderMaterial" load_steps=5 format=4 uid="uid://caqvbi5xsbcai"]
 
-[ext_resource type="Shader" uid="uid://clgt0a45gbdju" path="res://shaders/color_filter/color_filter.tres" id="1_v004t"]
+[ext_resource type="Shader" uid="uid://clgt0a45gbdju" path="res://shaders/color_filter/color_filter.tres" id="1_aabv3"]
+[ext_resource type="Texture2D" uid="uid://cnrcdwge7exwb" path="res://textures/color/Wall_01_A.png" id="2_r4jok"]
+[ext_resource type="Texture2D" uid="uid://bw81cobu3xals" path="res://textures/emission/Wall_01_Emissive.png" id="3_2hjbj"]
+[ext_resource type="Texture2D" uid="uid://u4xr3os1c55b" path="res://textures/normal/Wall_01_Normals.png" id="4_jy86d"]
 
 [resource]
 render_priority = 0
-shader = ExtResource("1_v004t")
-shader_parameter/force_texture = false
+shader = ExtResource("1_aabv3")
+shader_parameter/albedo_texture = ExtResource("2_r4jok")
+shader_parameter/emission_texture = ExtResource("3_2hjbj")
+shader_parameter/normal_texture = ExtResource("4_jy86d")
+shader_parameter/force_texture = true
 shader_parameter/use_emission = false
 shader_parameter/filter_colors = PackedVector4Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-shader_parameter/palette_size = 64
+shader_parameter/palette_size = 1

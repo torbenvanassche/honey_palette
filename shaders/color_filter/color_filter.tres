@@ -36,10 +36,10 @@ void fragment() {
         ALPHA = fallback_color.a;
     }
 	
-	NORMAL = texture(normal_texture, UV).xyz;
+	NORMAL_MAP = texture(normal_texture, UV).xyz;
 
 	if (use_emission) {
 		vec3 emission = texture(emission_texture, UV).rgb;
-    	EMISSION = emission;	
+    	EMISSION = emission;
 	}
 }"
