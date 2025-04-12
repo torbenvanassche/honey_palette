@@ -1,5 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://0gdq51qwx1mf"]
-
-[ext_resource type="PackedScene" uid="uid://ok5b6ugk80kg" path="res://models/base/plants/SM_Plant_07.glb" id="1_ls2r7"]
-
-[node name="SM_Plant_072" instance=ExtResource("1_ls2r7")]
