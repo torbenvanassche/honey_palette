@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cdog5r1pn66rs"]
+
+[ext_resource type="PackedScene" uid="uid://ct2odmxrg1yqn" path="res://models/base/SM_Bld_Wall_Laser_01.glb" id="1_bt47q"]
+[ext_resource type="PackedScene" uid="uid://ctqiao6ncoplc" path="res://models/base/SM_Bld_Corner_Trim_03.glb" id="2_gimtm"]
+
+[node name="laser_wall" type="Node3D"]
+
+[node name="SM_Bld_Wall_Laser_012" parent="." instance=ExtResource("1_bt47q")]
+transform = Transform3D(-4.37114e-08, 0.477118, 0, -1, -2.08555e-08, 0, 0, 0, 1, 0.533978, 2.61717, -1.50965)
+
+[node name="SM_Bld_Corner_Trim_032" parent="." instance=ExtResource("2_gimtm")]
+transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 0, 0, -1.5)
+
+[node name="SM_Bld_Corner_Trim_033" parent="." instance=ExtResource("2_gimtm")]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 2.5, 0, -1.5)

@@ -8,10 +8,12 @@
 [resource]
 render_priority = 0
 shader = ExtResource("1_556r5")
+shader_parameter/color_tint = Color(1, 1, 1, 1)
 shader_parameter/albedo_texture = ExtResource("2_556r5")
 shader_parameter/emission_texture = ExtResource("3_xc3pq")
 shader_parameter/normal_texture = ExtResource("4_axe0q")
 shader_parameter/force_texture = true
 shader_parameter/use_emission = false
+shader_parameter/tint_as_emission = false
 shader_parameter/filter_colors = PackedVector4Array()
 shader_parameter/palette_size = 0

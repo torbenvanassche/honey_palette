@@ -23,3 +23,4 @@ func toggle_textures() -> void:
 	for shader in shaders:
 		shader.set_shader_parameter("force_texture", !shader.get_shader_parameter("force_texture"))
 		shader.set_shader_parameter("use_emission", shader.get_shader_parameter("emission_texture") && shader.get_shader_parameter("force_texture"))
+		shader.set_shader_parameter("tint_as_emission", !shader.get_shader_parameter("emission_texture"))

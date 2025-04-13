@@ -1,0 +1,3 @@
+1. Laser puzzle, redirect the beam to open the door.
+2. Pipe manipulation, rotate pipes to make the energy flow to where it needs to go.
+3. Color manipulation, collect RGB and combinations of colors to fill meters, match the color to open the door.

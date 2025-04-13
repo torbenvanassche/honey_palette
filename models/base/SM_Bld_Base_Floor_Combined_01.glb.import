@@ -39,8 +39,8 @@ _subresources={
 "use_external/path": "uid://7jjdhxlbupir"
 },
 "placeholder.002": {
-"use_external/enabled": false,
-"use_external/path": "uid://7jjdhxlbupir"
+"use_external/enabled": true,
+"use_external/path": "uid://bnlg1rcxcmrh2"
 }
 },
 "nodes": {

@@ -1,0 +1,17 @@
+[gd_resource type="ShaderMaterial" load_steps=4 format=4 uid="uid://d3wacg8awbk0k"]
+
+[ext_resource type="Shader" uid="uid://clgt0a45gbdju" path="res://shaders/color_filter/color_filter.tres" id="1_lkep1"]
+[ext_resource type="Texture2D" uid="uid://uh31b3vf2kll" path="res://textures/color/Floor_03.png" id="2_lkep1"]
+[ext_resource type="Texture2D" uid="uid://roxw0gk24ei2" path="res://textures/normal/Floor_03_Normals.png" id="3_owhxn"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_lkep1")
+shader_parameter/color_tint = Color(1, 1, 1, 1)
+shader_parameter/albedo_texture = ExtResource("2_lkep1")
+shader_parameter/normal_texture = ExtResource("3_owhxn")
+shader_parameter/force_texture = true
+shader_parameter/use_emission = false
+shader_parameter/tint_as_emission = false
+shader_parameter/filter_colors = PackedVector4Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+shader_parameter/palette_size = 1
