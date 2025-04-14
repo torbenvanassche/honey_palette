@@ -135,6 +135,8 @@ var gravity : float = ProjectSettings.get_setting("physics/3d/default_gravity") 
 # Stores mouse input for rotating the camera in the physics process
 var mouseInput : Vector2 = Vector2(0,0)
 
+@onready var interactionRayCast: RayCast3D = $Head/Camera/RayCast3D;
+
 #endregion
 
 
@@ -196,6 +198,11 @@ func _physics_process(delta): # Most things happen here.
 		play_jump_animation()
 
 	update_debug_menu_per_tick()
+	
+	var interactable: Interactable = interactionRayCast.get_collider()
+	if interactable && Input.mouse_mode == Input.MouseMode.MOUSE_MODE_CAPTURED:
+		if interactable.has_signal("primary") && Input.is_action_just_pressed("primary_action"):
+			interactable.primary.emit();
 
 	was_on_floor = is_on_floor() # This must always be at the end of physics_process
 

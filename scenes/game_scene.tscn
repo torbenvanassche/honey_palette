@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://4y48an0tl5uq"]
+[gd_scene load_steps=22 format=3 uid="uid://4y48an0tl5uq"]
 
 [ext_resource type="PackedScene" uid="uid://b53x2faio571n" path="res://models/base/SM_Bld_Base_Floor_Combined_01.glb" id="1_onqr8"]
 [ext_resource type="PackedScene" uid="uid://cdog5r1pn66rs" path="res://models/prefab/laser_wall.tscn" id="2_77hjl"]
@@ -20,6 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://bfbvbvuqbudd" path="res://models/base/SM_Bld_Railing_Pillar_01.glb" id="19_77hjl"]
 [ext_resource type="PackedScene" uid="uid://caegbp0sbrdei" path="res://models/base/rails/SM_Bld_Railing_Pillar_Corner_Outer_01.glb" id="20_6aqbo"]
 [ext_resource type="PackedScene" uid="uid://pql4wxyq088q" path="res://models/prefab/laser_puzzle.tscn" id="20_ro0ie"]
+[ext_resource type="PackedScene" uid="uid://c412parctxmre" path="res://models/prefab/reflector.tscn" id="21_ro0ie"]
 
 [node name="Node3D" type="Node3D"]
 
@@ -398,4 +399,15 @@ transform = Transform3D(-0.400494, 0, 2.72068, 0, 2.75, 0, -2.72068, 0, -0.40049
 [node name="SM_Bld_Railing_Pillar_Corner_Outer_012" parent="." instance=ExtResource("20_6aqbo")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 12.5, 0, 7.5)
 
-[node name="laser puzzle" parent="." instance=ExtResource("20_ro0ie")]
+[node name="laser puzzle" parent="." node_paths=PackedStringArray("mirrors") instance=ExtResource("20_ro0ie")]
+mirrors = [NodePath("../SM_Prop_Satellite_012"), NodePath("../SM_Prop_Satellite_013")]
+
+[node name="SM_Prop_Satellite_012" parent="." instance=ExtResource("21_ro0ie")]
+transform = Transform3D(0.141421, 0.141421, 0, -0.141421, 0.141421, 0, 0, 0, 0.2, 4.06939, 0.512082, -4.8875)
+
+[node name="SM_Prop_Satellite_013" parent="." instance=ExtResource("21_ro0ie")]
+transform = Transform3D(-0.173205, -0.1, 0, 0.1, -0.173205, 0, 0, 0, 0.2, 5.81939, 2.26208, -4.8875)
+rotation_axis = Vector3(0, 0, 1)
+
+[node name="SM_Prop_Satellite_014" parent="." instance=ExtResource("21_ro0ie")]
+transform = Transform3D(0.0178837, -0.197939, 0.0223689, -0.194089, -0.0122605, 0.0466811, -0.0448288, -0.0258819, -0.193185, 6.80389, 1.6122, 0.0153607)

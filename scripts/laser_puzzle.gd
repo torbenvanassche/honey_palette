@@ -5,7 +5,7 @@ extends Node3D
 @export var beam_mesh: MeshInstance3D;
 @export var recepticle: StaticBody3D; 
 
-@export var mirrors: Array[MeshInstance3D] = [];
+@export var mirrors: Array[Rotator] = [];
 
 @export var max_bounces: int = 5;
 @export var max_distance: float= 1000.0;
@@ -13,8 +13,8 @@ extends Node3D
 
 var positions: Array[Vector3] = []
 
-func _ready() -> void:	
-	_draw();
+func _ready() -> void:
+	_draw();	
 	for mirror in mirrors:
 		mirror.rotated.connect(_draw)
 		
