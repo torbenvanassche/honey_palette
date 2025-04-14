@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=4 uid="uid://pql4wxyq088q"]
+[gd_scene load_steps=15 format=4 uid="uid://pql4wxyq088q"]
 
 [ext_resource type="Script" uid="uid://bxb6378rdd63j" path="res://scripts/laser_puzzle.gd" id="1_l70w0"]
 [ext_resource type="Material" uid="uid://dg1ml8xindj24" path="res://materials/color_filter/color_filter_cybercity_01_A.tres" id="2_l70w0"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://ctqiao6ncoplc" path="res://models/base/SM_Bld_Corner_Trim_03.glb" id="3_fcl1r"]
 [ext_resource type="PackedScene" uid="uid://dk02yhurbrjww" path="res://models/greebles/SM_Prop_Greebles_21.glb" id="3_l70w0"]
 [ext_resource type="PackedScene" uid="uid://b2tfi2l1fgqfe" path="res://models/base/SM_Prop_Laser_01.glb" id="4_uxdot"]
+[ext_resource type="Script" uid="uid://wa3ny4iniqu" path="res://scripts/rotator.gd" id="6_uxdot"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_2kwdk"]
 _surfaces = [{
@@ -81,10 +82,17 @@ size = Vector3(1, 0.1, 1)
 [sub_resource type="BoxShape3D" id="BoxShape3D_uxdot"]
 size = Vector3(1, 0.15, 1)
 
-[node name="laser puzzle" type="Node3D" node_paths=PackedStringArray("door", "beam")]
+[sub_resource type="BoxShape3D" id="BoxShape3D_l70w0"]
+size = Vector3(0.318451, 0.31958, 0.375244)
+
+[node name="laser puzzle" type="Node3D" node_paths=PackedStringArray("beam_origin", "door", "beam_mesh", "recepticle", "mirrors")]
 script = ExtResource("1_l70w0")
+beam_origin = NodePath("static/SM_Prop_Laser_012")
 door = NodePath("static/laser_wall2/SM_Bld_Wall_Laser_012/SM_Bld_Wall_Laser_01/SM_Bld_Wall_Laser_Beams_01")
-beam = NodePath("static/SM_Prop_Laser_012/LaserEmitter")
+beam_mesh = NodePath("BeamMesh")
+recepticle = NodePath("SM_Prop_Pipe_Small_Adapter_012/StaticBody3D")
+mirrors = [NodePath("MeshInstance3D2"), NodePath("MeshInstance3D"), NodePath("MeshInstance3D3")]
+max_distance = 100.0
 
 [node name="static" type="Node3D" parent="."]
 
@@ -109,23 +117,49 @@ transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107
 [node name="SM_Bld_Corner_Trim_033" parent="static/laser_wall2" instance=ExtResource("3_fcl1r")]
 transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 2.5, 0, -1.5)
 
-[node name="SM_Prop_Pipe_Small_Adapter_012" parent="static" instance=ExtResource("2_o247l")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 2.61433, 1.82993, -1.44741)
-
 [node name="SM_Prop_Greebles_212" parent="static" instance=ExtResource("3_l70w0")]
 transform = Transform3D(-4.37114e-08, -4.37114e-08, 1, 1, -8.74228e-08, 4.37114e-08, 8.74228e-08, 1, 4.37114e-08, 2.5385, 1.84555, -2.56558)
 
 [node name="SM_Prop_Laser_012" parent="static" instance=ExtResource("4_uxdot")]
 transform = Transform3D(2, 0, 0, 0, -8.74228e-08, 2, 0, -2, -8.74228e-08, 4.0727, 0.522993, -0.147433)
 
-[node name="LaserEmitter" type="RayCast3D" parent="static/SM_Prop_Laser_012"]
-target_position = Vector3(0, 3, 0)
-
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.748458, -0.663182, 0, 0.663182, 0.748458, 4, 0.483048, -5)
+transform = Transform3D(1, 0, 0, 0, 0.707107, -0.707107, 0, 0.707107, 0.707107, 4, 0.483048, -3.90362)
 mesh = SubResource("BoxMesh_l70w0")
+script = ExtResource("6_uxdot")
 
-[node name="Area3D" type="Area3D" parent="MeshInstance3D"]
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D" groups=["Mirror"]]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/Area3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
 shape = SubResource("BoxShape3D_uxdot")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 4, 1.97842, -3.91407)
+mesh = SubResource("BoxMesh_l70w0")
+script = ExtResource("6_uxdot")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D2" groups=["Mirror"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D2/StaticBody3D"]
+shape = SubResource("BoxShape3D_uxdot")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.866025, 0.353553, -0.353553, 0, 0.707107, 0.707107, 0.5, 0.612372, -0.612372, 4, 1.97842, -1.16407)
+mesh = SubResource("BoxMesh_l70w0")
+script = ExtResource("6_uxdot")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D3" groups=["Mirror"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D3/StaticBody3D"]
+shape = SubResource("BoxShape3D_uxdot")
+
+[node name="BeamMesh" type="MeshInstance3D" parent="."]
+
+[node name="SM_Prop_Pipe_Small_Adapter_012" parent="." instance=ExtResource("2_o247l")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 2.61433, 1.82993, -1.44741)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="SM_Prop_Pipe_Small_Adapter_012"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Prop_Pipe_Small_Adapter_012/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.115829, -0.00793457, -0.00256348)
+shape = SubResource("BoxShape3D_l70w0")

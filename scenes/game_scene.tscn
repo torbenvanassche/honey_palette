@@ -329,6 +329,18 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.00298363, 2.17626)
 [node name="SM_Bld_Railing_Rail_Straight_013" parent="." instance=ExtResource("17_mwyo0")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10, 0.00298363, 2.50096)
 
+[node name="SM_Bld_Railing_Pillar_Straight_017" parent="." instance=ExtResource("15_77hjl")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.49803, 0, -4.99904)
+
+[node name="SM_Bld_Railing_Pillar_Straight_018" parent="." instance=ExtResource("15_77hjl")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.49803, 0, 0.000960112)
+
+[node name="SM_Bld_Railing_Rail_Straight_021" parent="." instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.49803, 0.00298363, 0)
+
+[node name="SM_Bld_Railing_Rail_Straight_022" parent="." instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.49803, 0.00298363, -2.5)
+
 [node name="SM_Bld_Railing_Rail_Straight_016" parent="." instance=ExtResource("17_mwyo0")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10.3202, 3.00298, 2.50096)
 
