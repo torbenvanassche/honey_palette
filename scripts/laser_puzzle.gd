@@ -2,8 +2,10 @@ extends Node3D
 
 @export var beam_origin: Node3D;
 @export var door: Node3D;
+@export var door_collider: CollisionShape3D;
 @export var beam_mesh: MeshInstance3D;
 @export var recepticle: StaticBody3D; 
+@export var puzzle_start: Interactable;
 
 @export var mirrors: Array[Rotator] = [];
 
@@ -11,16 +13,22 @@ extends Node3D
 @export var max_distance: float= 1000.0;
 @export var laser_radius: float = 0.01;
 
-var positions: Array[Vector3] = []
+var last_positions: Array[Vector3] = [];
+var positions: Array[Vector3] = [];
 
 func _ready() -> void:
-	_draw();	
-	for mirror in mirrors:
-		mirror.rotated.connect(_draw)
+	if puzzle_start:
+		puzzle_start.primary.connect(_trigger_puzzle_start)
+	else:
+		_trigger_puzzle_start();
+	
+func _trigger_puzzle_start() -> void:
+	beam_mesh.visible = true;
 		
-func _draw() -> void:
-	_calc_beam()
-	_draw_beam()
+func _physics_process(delta: float) -> void:
+	if beam_mesh.visible:
+		_calc_beam()
+		_draw_beam()
 
 func _calc_beam() -> void:
 	positions.clear()
@@ -35,6 +43,7 @@ func _calc_beam() -> void:
 	for i in max_bounces:
 		var to := origin + direction * max_distance
 		var ray_query := PhysicsRayQueryParameters3D.new()
+		ray_query.exclude = [GameManager.instance.player]
 		ray_query.from = origin;
 		ray_query.to = to;
 		
@@ -51,23 +60,33 @@ func _calc_beam() -> void:
 				direction = direction.bounce(hit_normal).normalized()
 				origin = hit_point + direction * 0.01
 			elif collider == recepticle:
-				print("SOLVED")
+				door.visible = false;
+				door_collider.disabled = true;
 			else:
 				break
 		else:
 			positions.append(to)
 			break
-	
+
 func _draw_beam() -> void:
+	if positions == last_positions:
+		return  # No change, skip redraw
+
+	# Cache the current positions
+	last_positions = positions.duplicate()
+
+	# Clear previous beam segments
 	for child in beam_mesh.get_children():
 		child.queue_free()
 
+	# Draw new beam segments
 	for i in positions.size() - 1:
 		var start: Vector3 = positions[i]
 		var end: Vector3 = positions[i + 1]
 		var segment: Node3D = _create_cylinder_between_points(start, end)
 		beam_mesh.add_child(segment)
-		segment.global_position = segment.get_meta("position") as Vector3;
+		segment.global_position = segment.get_meta("position") as Vector3
+
 
 func _create_cylinder_between_points(start: Vector3, end: Vector3) -> Node3D:
 	var segment := Node3D.new()

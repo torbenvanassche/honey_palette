@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bxnoxc6618rqm"
-path="res://.godot/imported/SM_Prop_Greebles_22.glb-001a56b23a48f114466a2918e4298e5f.scn"
+uid="uid://dnj7eho4vw8ka"
+path="res://.godot/imported/SM_Prop_TrashBin_01.glb-051a64e2a378bbe28b03ec27fe57b83f.scn"
 
 [deps]
 
-source_file="res://models/greebles/SM_Prop_Greebles_22.glb"
-dest_files=["res://.godot/imported/SM_Prop_Greebles_22.glb-001a56b23a48f114466a2918e4298e5f.scn"]
+source_file="res://models/base/SM_Prop_TrashBin_01.glb"
+dest_files=["res://.godot/imported/SM_Prop_TrashBin_01.glb-051a64e2a378bbe28b03ec27fe57b83f.scn"]
 
 [params]
 
@@ -34,9 +34,9 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"placeholder.026": {
+"SciFiCrate_MAT": {
 "use_external/enabled": true,
-"use_external/path": "uid://m170ymg7uhil"
+"use_external/path": "uid://dg1ml8xindj24"
 }
 }
 }

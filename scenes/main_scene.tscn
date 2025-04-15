@@ -1,5 +1,6 @@
-[gd_scene load_steps=21 format=3 uid="uid://dmncwx1rwhi5v"]
+[gd_scene load_steps=22 format=3 uid="uid://dmncwx1rwhi5v"]
 
+[ext_resource type="Script" uid="uid://d1exa3fqjyojx" path="res://scripts/manager.gd" id="1_bcnxi"]
 [ext_resource type="PackedScene" uid="uid://4y48an0tl5uq" path="res://scenes/game_scene.tscn" id="1_pw63i"]
 [ext_resource type="Material" uid="uid://dg1ml8xindj24" path="res://materials/color_filter/color_filter_cybercity_01_A.tres" id="2_e1cbu"]
 [ext_resource type="Material" uid="uid://chcl2tcqk3q35" path="res://materials/color_filter/color_filter_nature.tres" id="2_gubc5"]
@@ -35,10 +36,9 @@ glow_intensity = 0.77
 glow_strength = 1.32
 glow_blend_mode = 0
 
-[node name="main_scene" type="Node3D"]
-script = ExtResource("4_pu3yx")
-colors = Array[Color]([])
-shaders = Array[ShaderMaterial]([ExtResource("5_18nlu"), ExtResource("2_e1cbu"), ExtResource("4_6u1mn"), ExtResource("5_bcnxi"), ExtResource("6_18nlu"), ExtResource("4_c16ls"), ExtResource("6_01n6w"), ExtResource("9_7nt27"), ExtResource("7_6u1mn"), ExtResource("2_gubc5"), ExtResource("10_bcnxi"), ExtResource("8_mngbo"), ExtResource("9_4w45t"), ExtResource("13_7nt27")])
+[node name="main_scene" type="Node3D" node_paths=PackedStringArray("player")]
+script = ExtResource("1_bcnxi")
+player = NodePath("Character")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_rt2n2")
@@ -48,7 +48,9 @@ transform = Transform3D(-0.866024, -0.433016, 0.250001, 0, 0.499998, 0.866026, -
 shadow_enabled = true
 shadow_normal_bias = 4.038
 
-[node name="Node3D" parent="." instance=ExtResource("1_pw63i")]
+[node name="game_level" parent="." instance=ExtResource("1_pw63i")]
+script = ExtResource("4_pu3yx")
+shaders = Array[ShaderMaterial]([ExtResource("5_18nlu"), ExtResource("2_e1cbu"), ExtResource("4_6u1mn"), ExtResource("5_bcnxi"), ExtResource("6_18nlu"), ExtResource("4_c16ls"), ExtResource("6_01n6w"), ExtResource("9_7nt27"), ExtResource("7_6u1mn"), ExtResource("2_gubc5"), ExtResource("10_bcnxi"), ExtResource("8_mngbo"), ExtResource("9_4w45t"), ExtResource("13_7nt27")])
 
 [node name="Character" parent="." instance=ExtResource("11_e1cbu")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 5.64067, 0, -2.11053)

@@ -3,6 +3,7 @@
 # Quality Godot First Person Controller v2
 
 
+class_name Player
 extends CharacterBody3D
 
 
@@ -199,16 +200,22 @@ func _physics_process(delta): # Most things happen here.
 
 	update_debug_menu_per_tick()
 	
-	var interactable: Interactable = interactionRayCast.get_collider()
-	if interactable && Input.mouse_mode == Input.MouseMode.MOUSE_MODE_CAPTURED:
-		if interactable.has_signal("primary") && Input.is_action_just_pressed("primary_action"):
-			interactable.primary.emit();
+	_raycast_mouse_direction();
 
 	was_on_floor = is_on_floor() # This must always be at the end of physics_process
 
 #endregion
 
 #region Input Handling
+
+func _raycast_mouse_direction() -> void:
+	if Input.mouse_mode == Input.MouseMode.MOUSE_MODE_CAPTURED:
+		interactionRayCast.force_raycast_update();
+		var area: Area3D = interactionRayCast.get_collider();
+		if area && Input.is_action_just_pressed("primary_action"):
+			var interactable = area.get_meta("interactable")
+			if interactable.has_signal("primary"):
+				interactable.clicked.emit(0);
 
 func handle_jumping():
 	if jumping_enabled:

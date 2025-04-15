@@ -12,6 +12,9 @@ func _ready() -> void:
 	body.add_to_group(&"Mirror")
 	clickable.primary.connect(_rotate);
 	
+	var rand_increments: int = randi_range(1, int(360 / rotate_increments) - 2)
+	rotator.rotate(rotation_axis, deg_to_rad(rotate_increments * rand_increments))
+	
 func _rotate() -> void:
 	rotator.rotate(rotation_axis, deg_to_rad(rotate_increments));
 	rotated.emit();

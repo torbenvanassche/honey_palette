@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bxnoxc6618rqm"
-path="res://.godot/imported/SM_Prop_Greebles_22.glb-001a56b23a48f114466a2918e4298e5f.scn"
+uid="uid://b8mdwqop8x5he"
+path="res://.godot/imported/SM_Switch_Lever_02.glb-209cbc16f2fab636c2178a74df660717.scn"
 
 [deps]
 
-source_file="res://models/greebles/SM_Prop_Greebles_22.glb"
-dest_files=["res://.godot/imported/SM_Prop_Greebles_22.glb-001a56b23a48f114466a2918e4298e5f.scn"]
+source_file="res://models/base/SM_Switch_Lever_02.glb"
+dest_files=["res://.godot/imported/SM_Switch_Lever_02.glb-209cbc16f2fab636c2178a74df660717.scn"]
 
 [params]
 
@@ -34,9 +34,9 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"placeholder.026": {
+"lambert4SG2.238": {
 "use_external/enabled": true,
-"use_external/path": "uid://m170ymg7uhil"
+"use_external/path": "uid://dg1ml8xindj24"
 }
 }
 }

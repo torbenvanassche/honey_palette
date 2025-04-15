@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bxnoxc6618rqm"
-path="res://.godot/imported/SM_Prop_Greebles_22.glb-001a56b23a48f114466a2918e4298e5f.scn"
+uid="uid://bq3hby5kopqxf"
+path="res://.godot/imported/SM_Prop_Greebles_21_no_ends.glb-aeba287c5b3d0ce09d9edba0a241bbd0.scn"
 
 [deps]
 
-source_file="res://models/greebles/SM_Prop_Greebles_22.glb"
-dest_files=["res://.godot/imported/SM_Prop_Greebles_22.glb-001a56b23a48f114466a2918e4298e5f.scn"]
+source_file="res://models/greebles/SM_Prop_Greebles_21_no_ends.glb"
+dest_files=["res://.godot/imported/SM_Prop_Greebles_21_no_ends.glb-aeba287c5b3d0ce09d9edba0a241bbd0.scn"]
 
 [params]
 
