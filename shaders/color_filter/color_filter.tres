@@ -16,7 +16,7 @@ uniform vec4 filter_colors[64];
 uniform int palette_size = 64;
 
 const vec4 fallback_color = vec4(0.3, 0.3, 0.3, 1.0);
-uniform float COLOR_THRESHOLD = 0.05;
+const float COLOR_THRESHOLD = 0.8;
 
 bool is_allowed(vec4 color) {
     for (int i = 0; i < palette_size; i++) {

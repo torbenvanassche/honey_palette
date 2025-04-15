@@ -50,6 +50,7 @@ shadow_normal_bias = 4.038
 
 [node name="game_level" parent="." instance=ExtResource("1_pw63i")]
 script = ExtResource("4_pu3yx")
+colors = Array[Color]([Color(1, 0, 0.184314, 1), Color(0, 1, 0, 1), Color(0, 0, 1, 1)])
 shaders = Array[ShaderMaterial]([ExtResource("5_18nlu"), ExtResource("2_e1cbu"), ExtResource("4_6u1mn"), ExtResource("5_bcnxi"), ExtResource("6_18nlu"), ExtResource("4_c16ls"), ExtResource("6_01n6w"), ExtResource("9_7nt27"), ExtResource("7_6u1mn"), ExtResource("2_gubc5"), ExtResource("10_bcnxi"), ExtResource("8_mngbo"), ExtResource("9_4w45t"), ExtResource("13_7nt27")])
 
 [node name="Character" parent="." instance=ExtResource("11_e1cbu")]

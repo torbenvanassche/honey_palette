@@ -12,6 +12,12 @@ extends Node3D
 @export var max_bounces: int = 5;
 @export var max_distance: float= 1000.0;
 @export var laser_radius: float = 0.01;
+@export var is_solved: bool = false: 
+	set(value):
+		is_solved = value;
+		if value:
+			door.visible = false;
+			door_collider.disabled = true;
 
 var last_positions: Array[Vector3] = [];
 var positions: Array[Vector3] = [];
@@ -26,7 +32,7 @@ func _trigger_puzzle_start() -> void:
 	beam_mesh.visible = true;
 		
 func _physics_process(delta: float) -> void:
-	if beam_mesh.visible:
+	if beam_mesh.visible || is_solved:
 		_calc_beam()
 		_draw_beam()
 
@@ -60,8 +66,7 @@ func _calc_beam() -> void:
 				direction = direction.bounce(hit_normal).normalized()
 				origin = hit_point + direction * 0.01
 			elif collider == recepticle:
-				door.visible = false;
-				door_collider.disabled = true;
+				is_solved = true;
 			else:
 				break
 		else:

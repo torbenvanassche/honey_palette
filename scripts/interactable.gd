@@ -26,3 +26,8 @@ func _on_click(btn_index: int) -> void:
 func _execute(animation_name: String = "", btn_index: int = 0) -> void:
 	if btn_index == 0:
 		primary.emit();
+		
+	if once:
+		for c in collider.get_children(false):
+			if c is CollisionShape3D:
+				c.disabled = true;
