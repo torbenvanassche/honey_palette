@@ -6,6 +6,4 @@
 render_priority = 1
 shader = ExtResource("1_0qht7")
 shader_parameter/tint_as_emission = true
-shader_parameter/show_default = false
 shader_parameter/use_emission = false
-shader_parameter/is_invisible = false

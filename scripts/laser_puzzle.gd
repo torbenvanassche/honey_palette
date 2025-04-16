@@ -34,11 +34,11 @@ func _trigger_puzzle_start() -> void:
 	is_started = true;
 		
 func _physics_process(delta: float) -> void:
-	if (beam_mesh.visible || is_solved):
+	if (beam_mesh.visible || is_solved) || Engine.is_editor_hint():
 		_calc_beam()
 		_draw_beam()
 		
-	beam_mesh.visible = !FileUtils.get_all_mesh_instances(beam_origin)[0].get_instance_shader_parameter("is_invisible") && is_started;
+	beam_mesh.visible = (!FileUtils.get_all_mesh_instances(beam_origin)[0].get_instance_shader_parameter("is_invisible") && is_started);
 	
 
 func _calc_beam() -> void:
@@ -54,7 +54,8 @@ func _calc_beam() -> void:
 	for i in max_bounces:
 		var to := origin + direction * max_distance
 		var ray_query := PhysicsRayQueryParameters3D.new()
-		ray_query.exclude = [GameManager.instance.player]
+		if !Engine.is_editor_hint():
+			ray_query.exclude = [GameManager.instance.player]
 		ray_query.from = origin;
 		ray_query.to = to;
 		
