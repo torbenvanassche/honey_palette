@@ -104,7 +104,7 @@ transform = Transform3D(0.01, 0, 0, 0, 0, -0.01, 0, 0.01, 0, 0, 0, 0)
 mesh = SubResource("ArrayMesh_r0k7l")
 skeleton = NodePath("")
 
-[node name="SM_Bld_Wall_Laser_Beams_01" type="MeshInstance3D" parent="static/laser_wall2/SM_Bld_Wall_Laser_012/SM_Bld_Wall_Laser_01"]
+[node name="SM_Bld_Wall_Laser_Beams_01" type="MeshInstance3D" parent="static/laser_wall2/SM_Bld_Wall_Laser_012/SM_Bld_Wall_Laser_01" groups=["tint_red"]]
 mesh = SubResource("ArrayMesh_tgmod")
 skeleton = NodePath("")
 
@@ -120,7 +120,7 @@ transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107
 [node name="SM_Bld_Corner_Trim_033" parent="static/laser_wall2" instance=ExtResource("3_fcl1r")]
 transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 2.5, 0, -1.5)
 
-[node name="SM_Prop_Laser_012" parent="static" instance=ExtResource("4_uxdot")]
+[node name="SM_Prop_Laser_012" parent="static" groups=["tint_red"] instance=ExtResource("4_uxdot")]
 transform = Transform3D(2, 0, 0, 0, -8.74228e-08, 2, 0, -2, -8.74228e-08, 4.0727, 0.522993, -0.0485402)
 
 [node name="BeamMesh" type="MeshInstance3D" parent="."]

@@ -1,4 +1,4 @@
-[gd_resource type="ShaderMaterial" load_steps=4 format=4 uid="uid://cqb64m560abxg"]
+[gd_resource type="ShaderMaterial" load_steps=4 format=3 uid="uid://cqb64m560abxg"]
 
 [ext_resource type="Shader" uid="uid://clgt0a45gbdju" path="res://shaders/color_filter/color_filter.tres" id="1_vm8lp"]
 [ext_resource type="Texture2D" uid="uid://cd7l36jlacyfs" path="res://textures/color/Wall_21.png" id="2_rw8x0"]
@@ -10,9 +10,7 @@ shader = ExtResource("1_vm8lp")
 shader_parameter/color_tint = Color(1, 1, 1, 1)
 shader_parameter/albedo_texture = ExtResource("2_rw8x0")
 shader_parameter/normal_texture = ExtResource("3_2chp8")
-shader_parameter/force_texture = true
+shader_parameter/show_color = false
 shader_parameter/use_emission = false
 shader_parameter/tint_as_emission = false
-shader_parameter/filter_colors = PackedVector4Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-shader_parameter/palette_size = 1
-shader_parameter/COLOR_THRESHOLD = 0.05
+shader_parameter/is_invisible = false

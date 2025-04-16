@@ -10,6 +10,8 @@ size = Vector3(1, 0.1, 1)
 size = Vector3(1, 0.1, 1)
 
 [node name="Node3D" type="MeshInstance3D"]
+instance_shader_parameters/color_mode = 0
+instance_shader_parameters/tint_color = Color(0.286275, 1, 1, 0.27451)
 mesh = SubResource("BoxMesh_8yjl5")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]

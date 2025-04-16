@@ -24,7 +24,18 @@ static func get_resource_paths(folder_path: String) -> Array[String]:
 			file_paths.append(file_path)  
 		file_name = dir.get_next()  
 	return file_paths
+	
+static func get_all_mesh_instances(node: Node) ->  Array[MeshInstance3D]:
+	var meshes: Array[MeshInstance3D] = []
 
+	if node is MeshInstance3D:
+		meshes.append(node)
+
+	for child in node.get_children():
+		meshes += get_all_mesh_instances(child)
+
+	return meshes
+	
 static func get_colors_from_palette(texture: Texture2D, row_count: int, column_count: int) -> Array[Color]:	
 	var image := texture.get_image()
 	var color_array: Array[Color] = []

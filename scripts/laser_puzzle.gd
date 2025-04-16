@@ -12,6 +12,8 @@ extends Node3D
 @export var max_bounces: int = 5;
 @export var max_distance: float= 1000.0;
 @export var laser_radius: float = 0.01;
+
+var is_started: bool = false;
 @export var is_solved: bool = false: 
 	set(value):
 		is_solved = value;
@@ -29,12 +31,15 @@ func _ready() -> void:
 		_trigger_puzzle_start();
 	
 func _trigger_puzzle_start() -> void:
-	beam_mesh.visible = true;
+	is_started = true;
 		
 func _physics_process(delta: float) -> void:
-	if beam_mesh.visible || is_solved:
+	if (beam_mesh.visible || is_solved):
 		_calc_beam()
 		_draw_beam()
+		
+	beam_mesh.visible = !FileUtils.get_all_mesh_instances(beam_origin)[0].get_instance_shader_parameter("is_invisible") && is_started;
+	
 
 func _calc_beam() -> void:
 	positions.clear()

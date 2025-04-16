@@ -47,6 +47,11 @@ script = ExtResource("2_f0o7e")
 animation_player = NodePath("AnimationPlayer")
 collider = NodePath("Area3D")
 once = true
+tint_id = "red"
+
+[node name="SM_Switch_Lever_02" parent="." index="0"]
+instance_shader_parameters/color_mode = 0
+instance_shader_parameters/tint_color = Color(1, 1, 1, 1)
 
 [node name="SM_Switch_Lever_Stick_02" parent="SM_Switch_Lever_02" index="0"]
 transform = Transform3D(1, 0, 0, 0, 0.833886, 0.551937, 0, -0.551937, 0.833886, 0, 0, 0)

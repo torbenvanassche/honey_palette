@@ -1,4 +1,4 @@
-class_name Interactable extends Node3D
+class_name Interactable extends UniqueShaderInstance
 
 signal primary();
 signal clicked(button_index: int);
@@ -11,6 +11,7 @@ signal clicked(button_index: int);
 var last_button_index: int = 0;
 
 func _ready() -> void:
+	super()
 	clicked.connect(_on_click, ConnectFlags.CONNECT_ONE_SHOT if once else 0);
 	if animation_player:
 		animation_player.animation_finished.connect(_execute.bind(last_button_index));

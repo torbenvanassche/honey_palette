@@ -39,11 +39,6 @@ glow_blend_mode = 0
 script = ExtResource("1_bcnxi")
 player = NodePath("Character")
 shaders = Array[ShaderMaterial]([ExtResource("5_18nlu"), ExtResource("2_e1cbu"), ExtResource("4_6u1mn"), ExtResource("5_bcnxi"), ExtResource("6_18nlu"), ExtResource("4_c16ls"), ExtResource("6_01n6w"), ExtResource("9_7nt27"), ExtResource("7_6u1mn"), ExtResource("2_gubc5"), ExtResource("10_bcnxi"), ExtResource("8_mngbo"), ExtResource("9_4w45t"), ExtResource("13_7nt27")])
-tint_colors = Dictionary[String, Color]({
-"blue": Color(0, 0.372549, 0.815686, 1),
-"green": Color(0.207843, 0.717647, 0.298039, 1),
-"red": Color(0.858824, 0.215686, 0, 1)
-})
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_rt2n2")
@@ -56,4 +51,4 @@ shadow_normal_bias = 4.038
 [node name="game_level" parent="." instance=ExtResource("1_pw63i")]
 
 [node name="Character" parent="." instance=ExtResource("11_e1cbu")]
-transform = Transform3D(0.938107, 0, -0.346346, 0, 1, 0, 0.346346, 0, 0.938107, 0.0887213, 0, 2.97095)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 5.64067, 0, -2.11053)

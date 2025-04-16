@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://c8tv38sn2tx7c"
-path="res://.godot/imported/SM_Bld_Railing_Rail_Straight_01.glb-3822f34c7e1f2cc85fd84ed19055c471.scn"
+uid="uid://c4bdqkg86dhmm"
+path="res://.godot/imported/SM_Bld_Base_Wall_Door_01.glb-bf1a9f37e598646a046dafc22012be52.scn"
 
 [deps]
 
-source_file="res://models/base/rails/SM_Bld_Railing_Rail_Straight_01.glb"
-dest_files=["res://.godot/imported/SM_Bld_Railing_Rail_Straight_01.glb-3822f34c7e1f2cc85fd84ed19055c471.scn"]
+source_file="res://models/base/SM_Bld_Base_Wall_Door_01.glb"
+dest_files=["res://.godot/imported/SM_Bld_Base_Wall_Door_01.glb-bf1a9f37e598646a046dafc22012be52.scn"]
 
 [params]
 
@@ -34,15 +34,17 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
+"A_Wall15.003": {
+"use_external/enabled": true,
+"use_external/path": "uid://cqb64m560abxg"
+},
+"HorrorSHD.001": {
+"use_external/enabled": true,
+"use_external/path": "uid://dg1ml8xindj24"
+},
 "placeholder.026": {
 "use_external/enabled": true,
-"use_external/path": "uid://dllnvi77mnunf"
-}
-},
-"nodes": {
-"PATH:SM_Bld_Railing_Rail_Straight_01": {
-"generate/physics": true,
-"physics/shape_type": 1
+"use_external/path": "uid://cdtlutvw1gduh"
 }
 }
 }

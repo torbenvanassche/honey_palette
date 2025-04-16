@@ -1,0 +1,22 @@
+[gd_scene load_steps=7 format=3 uid="uid://b4xdtphing75j"]
+
+[ext_resource type="PackedScene" uid="uid://c4bdqkg86dhmm" path="res://models/base/SM_Bld_Base_Wall_Door_01.glb" id="1_rm836"]
+[ext_resource type="PackedScene" uid="uid://daktt5qy8tljw" path="res://models/base/SM_Bld_Door_Single_Frame_01.glb" id="2_6ia6u"]
+[ext_resource type="Script" uid="uid://d2miqcup3my6v" path="res://scripts/door.gd" id="2_kmiqr"]
+[ext_resource type="Material" uid="uid://bqv2dtk3i5ekf" path="res://materials/color_filter/color_filter_cybercity_01_A_Alt.tres" id="3_ihgtl"]
+[ext_resource type="PackedScene" uid="uid://c2113ku81volc" path="res://models/base/SM_Bld_Door_Single_01.glb" id="3_kmiqr"]
+[ext_resource type="Material" uid="uid://dg1ml8xindj24" path="res://materials/color_filter/color_filter_cybercity_01_A.tres" id="4_vb1fh"]
+
+[node name="SM_Bld_Base_Wall_Door_012" instance=ExtResource("1_rm836")]
+script = ExtResource("2_kmiqr")
+is_locked = true
+material_locked = ExtResource("3_ihgtl")
+material_open = ExtResource("4_vb1fh")
+
+[node name="SM_Bld_Base_Wall_Door_01" parent="." index="0"]
+transform = Transform3D(0.01, 0, 0, 0, -4.37114e-10, -0.01, 0, 0.01, -4.37114e-10, 0, 0, 0)
+
+[node name="SM_Bld_Door_Single_Frame_01" parent="SM_Bld_Base_Wall_Door_01" index="0" instance=ExtResource("2_6ia6u")]
+transform = Transform3D(100, 0, 0, 0, -4.37114e-06, 100, 0, -100, -4.37114e-06, 125, 0, 0)
+
+[node name="SM_Bld_Door_Single_01" parent="SM_Bld_Base_Wall_Door_01/SM_Bld_Door_Single_Frame_01" index="1" instance=ExtResource("3_kmiqr")]
