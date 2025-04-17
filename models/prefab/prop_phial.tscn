@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://bk3p44ounv0yx"]
+
+[ext_resource type="PackedScene" uid="uid://d3gsk1wrucrch" path="res://models/items/SM_Prop_Pill_Bottle_Neutral.glb" id="1_nky3f"]
+[ext_resource type="Script" uid="uid://q4legxebdlbq" path="res://scripts/interactable.gd" id="2_v63np"]
+[ext_resource type="Script" uid="uid://ltfju0p8upjr" path="res://scripts/interaction_handlers/pill_bottle_collectible.gd" id="3_xf6gh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_oisjn"]
+size = Vector3(0.225983, 0.0654907, 0.0610352)
+
+[node name="SM_Prop_Pill_Bottle_Neutral" node_paths=PackedStringArray("collider", "script_node") instance=ExtResource("1_nky3f")]
+script = ExtResource("2_v63np")
+collider = NodePath("Area3D")
+once = true
+script_node = NodePath("script_node")
+
+[node name="Area3D" type="Area3D" parent="." index="1"]
+collision_layer = 8
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00672913, 0.0335999, 0.00219727)
+shape = SubResource("BoxShape3D_oisjn")
+
+[node name="script_node" type="Node" parent="." index="2"]
+script = ExtResource("3_xf6gh")

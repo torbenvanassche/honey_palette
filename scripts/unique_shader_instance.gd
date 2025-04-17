@@ -4,6 +4,7 @@ class_name UniqueShaderInstance extends Node3D
 var meshes: Array[MeshInstance3D] = [];
 var enabled: bool = false;
 
-func _ready() -> void:	
+func _ready() -> void:
 	meshes = FileUtils.get_all_mesh_instances(self);
-	self.add_to_group("tint_" + tint_id);
+	if tint_id != "UNSET":
+		self.add_to_group("tint_" + tint_id);

@@ -1,0 +1,67 @@
+[gd_scene load_steps=7 format=3 uid="uid://c5vuv2srysibv"]
+
+[ext_resource type="PackedScene" uid="uid://bl1ukpsk2lcg6" path="res://models/items/SM_Prop_Pill_Dispenser_01.glb" id="1_mqlv6"]
+[ext_resource type="Script" uid="uid://q4legxebdlbq" path="res://scripts/interactable.gd" id="2_tbec3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_u3cnu"]
+size = Vector3(13.25, 28.9328, 14.872)
+
+[sub_resource type="Animation" id="Animation_tbec3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SM_Prop_Pill_Dispenser_01/SM_Prop_Pill_Dispenser_01_Handle_01:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_mqlv6"]
+resource_name = "trigger"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SM_Prop_Pill_Dispenser_01/SM_Prop_Pill_Dispenser_01_Handle_01:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(2, 0.5),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, -6.28319, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_u3cnu"]
+_data = {
+&"RESET": SubResource("Animation_tbec3"),
+&"trigger": SubResource("Animation_mqlv6")
+}
+
+[node name="SM_Prop_Pill_Dispenser_012" node_paths=PackedStringArray("animation_player", "collider") instance=ExtResource("1_mqlv6")]
+script = ExtResource("2_tbec3")
+animation_player = NodePath("AnimationPlayer")
+collider = NodePath("SM_Prop_Pill_Dispenser_01/SM_Prop_Pill_Dispenser_01_Handle_01/Area3D")
+once = true
+
+[node name="SM_Prop_Pill_Dispenser_01_Handle_01" parent="SM_Prop_Pill_Dispenser_01" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.91125, 12.7505, -107.751)
+
+[node name="Area3D" type="Area3D" parent="SM_Prop_Pill_Dispenser_01/SM_Prop_Pill_Dispenser_01_Handle_01" index="0"]
+transform = Transform3D(1, 0, 2.23623e-20, 0, 1, 0, 2.23623e-20, 0, 1, 0, 0, 0)
+collision_layer = 8
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Prop_Pill_Dispenser_01/SM_Prop_Pill_Dispenser_01_Handle_01/Area3D" index="0"]
+transform = Transform3D(1, 9.55261e-32, 2.23623e-20, 0, 1, 0, 2.23623e-20, 0, 1, 0, 0, 0)
+shape = SubResource("BoxShape3D_u3cnu")
+debug_color = Color(1, 0.6, 0.701961, 0.419608)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="1"]
+libraries = {
+&"": SubResource("AnimationLibrary_u3cnu")
+}

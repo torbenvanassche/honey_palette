@@ -1,10 +1,9 @@
-[gd_scene load_steps=14 format=4 uid="uid://pql4wxyq088q"]
+[gd_scene load_steps=13 format=4 uid="uid://pql4wxyq088q"]
 
 [ext_resource type="Script" uid="uid://bxb6378rdd63j" path="res://scripts/laser_puzzle.gd" id="1_l70w0"]
 [ext_resource type="Material" uid="uid://dg1ml8xindj24" path="res://materials/color_filter/color_filter_cybercity_01_A.tres" id="2_l70w0"]
 [ext_resource type="PackedScene" uid="uid://djh8rcnv1xv68" path="res://models/pipes/SM_Prop_Pipe_Small_Adapter_01.glb" id="2_o247l"]
 [ext_resource type="PackedScene" uid="uid://ctqiao6ncoplc" path="res://models/base/SM_Bld_Corner_Trim_03.glb" id="3_fcl1r"]
-[ext_resource type="PackedScene" uid="uid://b2tfi2l1fgqfe" path="res://models/base/SM_Prop_Laser_01.glb" id="4_uxdot"]
 [ext_resource type="PackedScene" uid="uid://dpic6mu3ojy2l" path="res://models/pipes/SM_Bld_Pipe_Small_02.glb" id="6_uxdot"]
 [ext_resource type="PackedScene" uid="uid://cyun7wfpqov2n" path="res://models/pipes/SM_Bld_Pipe_Small_Bend_01.glb" id="7_fcl1r"]
 
@@ -82,9 +81,8 @@ size = Vector3(244.568, 30.8687, 284.342)
 [sub_resource type="BoxShape3D" id="BoxShape3D_l70w0"]
 size = Vector3(0.318451, 0.31958, 0.375244)
 
-[node name="laser puzzle" type="Node3D" node_paths=PackedStringArray("beam_origin", "door", "door_collider", "beam_mesh", "recepticle")]
+[node name="laser puzzle" type="Node3D" node_paths=PackedStringArray("door", "door_collider", "beam_mesh", "recepticle")]
 script = ExtResource("1_l70w0")
-beam_origin = NodePath("static/SM_Prop_Laser_012")
 door = NodePath("static/laser_wall2/SM_Bld_Wall_Laser_012/SM_Bld_Wall_Laser_01/SM_Bld_Wall_Laser_Beams_01")
 door_collider = NodePath("static/laser_wall2/SM_Bld_Wall_Laser_012/SM_Bld_Wall_Laser_01/SM_Bld_Wall_Laser_Beams_01/StaticBody3D/CollisionShape3D")
 beam_mesh = NodePath("BeamMesh")
@@ -120,11 +118,7 @@ transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107
 [node name="SM_Bld_Corner_Trim_033" parent="static/laser_wall2" instance=ExtResource("3_fcl1r")]
 transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 2.5, 0, -1.5)
 
-[node name="SM_Prop_Laser_012" parent="static" groups=["tint_red"] instance=ExtResource("4_uxdot")]
-transform = Transform3D(2, 0, 0, 0, -8.74228e-08, 2, 0, -2, -8.74228e-08, 4.0727, 0.522993, -0.0485402)
-
 [node name="BeamMesh" type="MeshInstance3D" parent="."]
-visible = false
 
 [node name="SM_Prop_Pipe_Small_Adapter_012" parent="." instance=ExtResource("2_o247l")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 2.61433, 2.10787, -2.21657)

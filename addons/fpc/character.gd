@@ -210,12 +210,13 @@ func _physics_process(delta): # Most things happen here.
 
 func _raycast_mouse_direction() -> void:
 	if Input.mouse_mode == Input.MouseMode.MOUSE_MODE_CAPTURED:
-		interactionRayCast.force_raycast_update();
-		var area: Area3D = interactionRayCast.get_collider();
-		if area && Input.is_action_just_pressed("primary_action"):
-			var interactable = area.get_meta("interactable")
-			if interactable.has_signal("primary"):
-				interactable.clicked.emit(0);
+		if Input.is_action_just_pressed("primary_action"):
+			var area: Area3D = interactionRayCast.get_collider();
+			print(area)
+			if area:
+				var interactable = area.get_meta("interactable")
+				if interactable.has_signal("clicked"):
+					interactable.clicked.emit(0);
 
 func handle_jumping():
 	if jumping_enabled:

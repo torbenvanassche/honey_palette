@@ -8,11 +8,8 @@
 [resource]
 render_priority = 0
 shader = ExtResource("1_ge1qp")
-shader_parameter/color_tint = Color(1, 1, 1, 1)
 shader_parameter/albedo_texture = ExtResource("2_ge1qp")
 shader_parameter/emission_texture = ExtResource("3_kemja")
 shader_parameter/normal_texture = ExtResource("4_qq4f7")
-shader_parameter/show_color = false
-shader_parameter/use_emission = false
 shader_parameter/tint_as_emission = false
-shader_parameter/is_invisible = false
+shader_parameter/use_emission = false

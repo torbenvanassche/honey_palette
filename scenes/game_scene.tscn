@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://4y48an0tl5uq"]
+[gd_scene load_steps=29 format=3 uid="uid://4y48an0tl5uq"]
 
 [ext_resource type="PackedScene" uid="uid://b53x2faio571n" path="res://models/base/SM_Bld_Base_Floor_Combined_01.glb" id="1_onqr8"]
 [ext_resource type="PackedScene" uid="uid://da3taqvterwy4" path="res://models/prefab/container.tscn" id="3_85lt4"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bgv2wegpmltc" path="res://models/base/SM_Bld_Railing_Straight_01.glb" id="8_b5spy"]
 [ext_resource type="PackedScene" uid="uid://dvw7r0wtarv71" path="res://models/base/SM_Bld_Base_Wall_01.glb" id="8_tcjrq"]
 [ext_resource type="PackedScene" uid="uid://dmrxiwd51xrno" path="res://models/base/SM_Bld_Stairs_01.glb" id="9_tcjrq"]
+[ext_resource type="PackedScene" uid="uid://b2tfi2l1fgqfe" path="res://models/base/SM_Prop_Laser_01.glb" id="10_r47aq"]
 [ext_resource type="PackedScene" uid="uid://ckk6do6jpo5pb" path="res://models/base/SM_Bld_Base_45_Floor_Combined_01.glb" id="10_rvs2r"]
 [ext_resource type="PackedScene" uid="uid://c78y8thnogj4r" path="res://models/base/SM_Bld_Stairwell_Wall_02.glb" id="11_tqxxy"]
 [ext_resource type="PackedScene" uid="uid://338pp0kchra" path="res://models/base/rails/SM_Bld_Railing_Straight_03.glb" id="12_liy57"]
@@ -26,823 +27,25 @@
 [ext_resource type="PackedScene" uid="uid://dk02yhurbrjww" path="res://models/greebles/SM_Prop_Greebles_21.glb" id="23_xgstd"]
 [ext_resource type="PackedScene" uid="uid://b4xdtphing75j" path="res://models/prefab/door.tscn" id="25_xgstd"]
 [ext_resource type="PackedScene" uid="uid://babsc2pya2ijk" path="res://models/base/SM_Bld_Base_Pillar_01.glb" id="26_ttvoq"]
-[ext_resource type="PackedScene" uid="uid://bl1ukpsk2lcg6" path="res://models/items/SM_Prop_Pill_Dispenser_01.glb" id="27_rw4oa"]
+[ext_resource type="PackedScene" uid="uid://c5vuv2srysibv" path="res://models/prefab/sm_dispenser.tscn" id="27_rw4oa"]
 
 [node name="Node3D" type="Node3D"]
-
-[node name="SM_Bld_Base_Wall_012" parent="." instance=ExtResource("8_tcjrq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, 0)
-
-[node name="SM_Bld_Base_Wall_017" parent="." instance=ExtResource("8_tcjrq")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7.5, 0, 2.5)
-
-[node name="SM_Bld_Base_Wall_022" parent="." instance=ExtResource("8_tcjrq")]
-transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 10, -3, 5)
-
-[node name="SM_Bld_Base_Wall_024" parent="." instance=ExtResource("8_tcjrq")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10.0244, -3, 2.5)
-
-[node name="SM_Bld_Base_Wall_025" parent="." instance=ExtResource("8_tcjrq")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10.0244, -3, 5)
-
-[node name="SM_Bld_Base_Wall_026" parent="." instance=ExtResource("8_tcjrq")]
-transform = Transform3D(1, 0, 7.10543e-15, 0, 1, 0, -7.10543e-15, 0, 1, 10.0244, -3, 7.5)
-
-[node name="SM_Bld_Base_Wall_023" parent="." instance=ExtResource("8_tcjrq")]
-transform = Transform3D(-1, 0, 2.62268e-07, 0, 1, 0, -2.62268e-07, 0, -1, 12.5, -3, 2.5)
-
-[node name="SM_Bld_Base_Wall_018" parent="." instance=ExtResource("8_tcjrq")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7.5, 0, 0)
-
-[node name="SM_Bld_Base_Wall_019" parent="." instance=ExtResource("8_tcjrq")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7.5, -3, 2.5)
-
-[node name="SM_Bld_Base_Wall_020" parent="." instance=ExtResource("8_tcjrq")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7.5, -3, 0)
-
-[node name="SM_Bld_Base_Wall_021" parent="." instance=ExtResource("8_tcjrq")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7.5, -3, -2.5)
-
-[node name="SM_Bld_Base_Wall_032" parent="." instance=ExtResource("8_tcjrq")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7.5, -3, -5)
-
-[node name="SM_Bld_Base_Wall_014" parent="." instance=ExtResource("8_tcjrq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, 0)
-
-[node name="SM_Bld_Base_Wall_027" parent="." instance=ExtResource("8_tcjrq")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, -0.0570557)
-
-[node name="SM_Bld_Base_Wall_015" parent="." instance=ExtResource("8_tcjrq")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, -2.5)
-
-[node name="SM_Bld_Base_Wall_016" parent="." instance=ExtResource("8_tcjrq")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.5, 0, 0)
-
-[node name="SM_Bld_Base_Wall_029" parent="." instance=ExtResource("8_tcjrq")]
-transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, 2.5, 0, -5)
-
-[node name="SM_Bld_Base_Wall_030" parent="." instance=ExtResource("8_tcjrq")]
-transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, 5, 0, -5)
-
-[node name="SM_Bld_Base_Wall_031" parent="." instance=ExtResource("8_tcjrq")]
-transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, 0, 0, -5)
-
-[node name="SM_Bld_Base_Wall_028" parent="." instance=ExtResource("8_tcjrq")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, -5)
-
-[node name="SM_Bld_Base_Wall_013" parent="." instance=ExtResource("8_tcjrq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)
-
-[node name="SM_Ground" type="Node3D" parent="."]
-
-[node name="SM_Bld_Base_Floor_Combined_012" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-
-[node name="SM_Bld_Base_Floor_Combined_020" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.5)
-
-[node name="SM_Bld_Base_Floor_Combined_021" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
-
-[node name="SM_Bld_Base_Floor_Combined_037" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -2.5)
-
-[node name="SM_Bld_Base_Floor_Combined_038" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -5)
-
-[node name="SM_Bld_Base_Floor_Combined_039" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -2.5)
-
-[node name="SM_Bld_Base_Floor_Combined_040" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -5)
-
-[node name="SM_Bld_Base_Floor_Combined_014" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.5)
-
-[node name="SM_Bld_Base_Floor_Combined_018" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, 0)
-
-[node name="SM_Bld_Base_Floor_Combined_019" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, 2.5)
-
-[node name="SM_Bld_Base_Floor_Combined_015" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, 2.5)
-
-[node name="SM_Bld_Base_Floor_Combined_017" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 2.5)
-
-[node name="SM_Bld_Base_Floor_Combined_016" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5)
-
-[node name="SM_Bld_Base_Floor_Combined_022" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, 5)
-
-[node name="SM_Bld_Base_Floor_Combined_023" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, 5)
-
-[node name="SM_Bld_Base_Floor_Combined_024" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 5)
-
-[node name="SM_Bld_Base_Floor_Combined_025" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 0, 5)
-
-[node name="SM_Bld_Base_Floor_Combined_058" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7.5)
-
-[node name="SM_Bld_Base_Floor_Combined_059" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, 7.5)
-
-[node name="SM_Bld_Base_Floor_Combined_063" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 0)
-
-[node name="SM_Bld_Base_Floor_Combined_067" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, -2.5)
-
-[node name="SM_Bld_Base_Floor_Combined_068" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -2.5)
-
-[node name="SM_Bld_Base_Floor_Combined_069" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, -5)
-
-[node name="SM_Bld_Base_Floor_Combined_070" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -5)
-
-[node name="SM_Bld_Base_Floor_Combined_064" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 2.5)
-
-[node name="SM_Bld_Base_Floor_Combined_065" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 5)
-
-[node name="SM_Bld_Base_Floor_Combined_066" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 7.5)
-
-[node name="SM_Bld_Base_Floor_Combined_060" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, 7.5)
-
-[node name="SM_Bld_Base_Floor_Combined_061" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 7.5)
-
-[node name="SM_Bld_Base_Floor_Combined_062" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 0, 7.5)
-
-[node name="SM_Bld_Base_Floor_Combined_026" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 5)
-
-[node name="SM_Bld_Base_Floor_Combined_041" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 7.5)
-
-[node name="SM_Bld_Base_Floor_Combined_042" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.5, 0, 7.5)
-
-[node name="SM_Bld_Base_Floor_Combined_051" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 7.5)
-
-[node name="SM_Bld_Base_Floor_Combined_052" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.5, 0, 7.5)
-
-[node name="SM_Bld_Base_Floor_Combined_053" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.5, 0, 5)
-
-[node name="SM_Bld_Base_Floor_Combined_054" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.5, 0, 2.5)
-
-[node name="SM_Bld_Base_Floor_Combined_055" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.5, 0, 0)
-
-[node name="SM_Bld_Base_Floor_Combined_056" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.5, 0, -2.5)
-
-[node name="SM_Bld_Base_Floor_Combined_057" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.5, 0, -5)
-
-[node name="SM_Bld_Base_Floor_Combined_032" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 2.5)
-
-[node name="SM_Bld_Base_Floor_Combined_027" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 12.5, -3, 0)
-
-[node name="SM_Bld_Base_Floor_Combined_028" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 12.5, -3, -2.5)
-
-[node name="SM_Bld_Base_Floor_Combined_030" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 15, -3, 0)
-
-[node name="SM_Bld_Base_Floor_Combined_033" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 15, -3, 2.5)
-
-[node name="SM_Bld_Base_Floor_Combined_034" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 15, -3, 5)
-
-[node name="SM_Bld_Base_Floor_Combined_035" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 12.5, -3, 2.5)
-
-[node name="SM_Bld_Base_Floor_Combined_036" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 12.5, -3, 5)
-
-[node name="SM_Bld_Base_Floor_Combined_031" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 15, -3, -2.5)
-
-[node name="SM_Bld_Base_Floor_Combined_043" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 15, -3, -5)
-
-[node name="SM_Bld_Base_Floor_Combined_046" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 17.5, -3, 0)
-
-[node name="SM_Bld_Base_Floor_Combined_047" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 17.5, -3, 2.5)
-
-[node name="SM_Bld_Base_Floor_Combined_048" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 17.5, -3, 5)
-
-[node name="SM_Bld_Base_Floor_Combined_049" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 17.5, -3, -2.5)
-
-[node name="SM_Bld_Base_Floor_Combined_050" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 17.5, -3, -5)
-
-[node name="SM_Bld_Base_Floor_Combined_044" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 12.5, -3, -5)
-
-[node name="SM_Bld_Base_Floor_Combined_045" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 10, -3, -5)
-
-[node name="SM_Bld_Base_Floor_Combined_029" parent="SM_Ground" instance=ExtResource("1_onqr8")]
-transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 10, -3, -2.5)
-
-[node name="SM_Ground_2" type="Node3D" parent="."]
-
-[node name="SM_Bld_Base_Floor_Combined_022" parent="SM_Ground_2" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 3, 0)
-
-[node name="SM_Bld_Base_Floor_Combined_028" parent="SM_Ground_2" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 3, 2.5)
-
-[node name="SM_Bld_Base_Floor_Combined_029" parent="SM_Ground_2" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 3, 2.5)
-
-[node name="SM_Bld_Base_Floor_Combined_032" parent="SM_Ground_2" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 3, 5)
-
-[node name="SM_Bld_Base_Floor_Combined_030" parent="SM_Ground_2" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 3, 0)
-
-[node name="SM_Bld_Base_Floor_Combined_031" parent="SM_Ground_2" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 3, -2.5)
-
-[node name="SM_Bld_Base_Floor_Combined_023" parent="SM_Ground_2" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 3, -2.5)
-
-[node name="SM_Bld_Base_Floor_Combined_024" parent="SM_Ground_2" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 3, -2.5)
-
-[node name="SM_Bld_Base_Floor_Combined_025" parent="SM_Ground_2" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 3, -2.5)
-
-[node name="SM_Bld_Base_Floor_Combined_034" parent="SM_Ground_2" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 3, -5)
-
-[node name="SM_Bld_Base_Floor_Combined_036" parent="SM_Ground_2" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 3, -5)
-
-[node name="SM_Bld_Base_Floor_Combined_035" parent="SM_Ground_2" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 3, -5)
-
-[node name="SM_Bld_Base_Floor_Combined_026" parent="SM_Ground_2" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, -2.5)
-
-[node name="SM_Bld_Base_Floor_Combined_033" parent="SM_Ground_2" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, -5)
-
-[node name="SM_Bld_Base_Floor_Combined_027" parent="SM_Ground_2" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 3, -2.5)
-
-[node name="SM_Bld_Base_Floor_Combined_037" parent="SM_Ground_2" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 3, -5)
-
-[node name="SM_Bld_Base_Floor_Combined_038" parent="SM_Ground_2" instance=ExtResource("1_onqr8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 3, -5)
-
-[node name="SM_Prop_TrashBin_012" parent="SM_Ground_2" instance=ExtResource("3_85lt4")]
-transform = Transform3D(-2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, 1.90983, 0.00809067, -1.48877)
-
-[node name="SM_Prop_TrashBin_013" parent="SM_Ground_2" instance=ExtResource("3_85lt4")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 11.2396, -2.90925, 3.0791)
-
-[node name="stairs" parent="." instance=ExtResource("6_rurhu")]
-
-[node name="SM_Bld_Railing_Straight_012" parent="." instance=ExtResource("8_b5spy")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7.5, 3, 2.50835)
-
-[node name="SM_Bld_Railing_Straight_013" parent="." instance=ExtResource("8_b5spy")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.5, 3, 5)
-
-[node name="SM_Bld_Stairs_012" parent="." instance=ExtResource("9_tcjrq")]
-transform = Transform3D(-0.919239, 0, 0.707107, 0, 1, 0, -0.919239, 0, -0.707107, 11.6578, -3, 0.657803)
-
-[node name="SM_Bld_Stairs_013" parent="." instance=ExtResource("9_tcjrq")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10, -1.57425, 2.5)
-
-[node name="SM_Bld_Base_45_Floor_Combined_012" parent="." instance=ExtResource("10_rvs2r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, -1.5, 0)
-
-[node name="SM_Bld_Stairwell_Wall_022" parent="." instance=ExtResource("11_tqxxy")]
-transform = Transform3D(-0.664771, 0, -0.707107, 0, 1.27447, 0, 0.664771, 0, -0.707107, 11.7082, -3.16155, 0.67595)
-
-[node name="SM_Bld_Stairwell_Wall_023" parent="." instance=ExtResource("11_tqxxy")]
-transform = Transform3D(-0.712924, 0, -0.707107, 0, 1.27447, 0, 0.712924, 0, -0.707107, 9.29958, -3.16155, -1.73268)
-
-[node name="SM_Bld_Railing_Straight_032" parent="." instance=ExtResource("12_liy57")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 12.5, 0, 2.5)
-
-[node name="SM_Bld_Railing_Straight_033" parent="." instance=ExtResource("12_liy57")]
-transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 7.5, 3, 5)
-
-[node name="SM_Bld_Railing_Straight_035" parent="." instance=ExtResource("12_liy57")]
-transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 0, 3, 0)
-
-[node name="SM_Bld_Railing_Pillar_Corner_Inner_012" parent="." instance=ExtResource("13_mwyo0")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 12.5, 0, 2.5)
-
-[node name="SM_Bld_Railing_Pillar_Corner_Inner_017" parent="." instance=ExtResource("13_mwyo0")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 17.5, 0, -5)
-
-[node name="SM_Bld_Railing_Pillar_Corner_Inner_020" parent="." instance=ExtResource("13_mwyo0")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 19.75, 0, -5)
-
-[node name="SM_Bld_Railing_Pillar_Corner_Inner_021" parent="." instance=ExtResource("13_mwyo0")]
-transform = Transform3D(1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 19.75, 0, 10)
-
-[node name="SM_Bld_Railing_Pillar_Corner_Inner_022" parent="." instance=ExtResource("13_mwyo0")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -5, 0, 10)
-
-[node name="SM_Bld_Railing_Pillar_Corner_Inner_026" parent="." instance=ExtResource("13_mwyo0")]
-transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -5, 0, -5)
-
-[node name="SM_Bld_Railing_Pillar_Corner_Inner_018" parent="." instance=ExtResource("13_mwyo0")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 17.4265, -2.9292, -4.84943)
-
-[node name="SM_Bld_Railing_Pillar_Corner_Inner_019" parent="." instance=ExtResource("13_mwyo0")]
-transform = Transform3D(1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 17.4416, -2.9292, 7.40057)
-
-[node name="SM_Bld_Railing_Pillar_Corner_Inner_014" parent="." instance=ExtResource("13_mwyo0")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 3, -5)
-
-[node name="SM_Bld_Railing_Pillar_Corner_Inner_015" parent="." instance=ExtResource("13_mwyo0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 3, 5)
-
-[node name="SM_Bld_Railing_Pillar_Corner_Inner_023" parent="." instance=ExtResource("13_mwyo0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 3, 7.25)
-
-[node name="SM_Bld_Railing_Pillar_Corner_Inner_024" parent="." instance=ExtResource("13_mwyo0")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -5, 3, 7.25)
-
-[node name="SM_Bld_Railing_Pillar_Corner_Inner_025" parent="." instance=ExtResource("13_mwyo0")]
-transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -5, 3, -5)
-
-[node name="SM_Bld_Railing_Pillar_Corner_Inner_016" parent="." instance=ExtResource("13_mwyo0")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7.5, 3, 5)
-
-[node name="SM_Bld_Railing_Pillar_Corner_Inner_013" parent="." instance=ExtResource("13_mwyo0")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10, 0, 2.5)
-
-[node name="SM_Bld_Railing_Straight_022" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 12.5, 0, 5)
-
-[node name="SM_Bld_Railing_Straight_025" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 3, 5)
-
-[node name="SM_Bld_Railing_Straight_026" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 3, 2.5)
-
-[node name="SM_Bld_Railing_Straight_027" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 3, -2.5)
-
-[node name="SM_Bld_Railing_Straight_029" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.5, 0, 0)
-
-[node name="SM_Bld_Railing_Straight_028" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 3, 0)
-
-[node name="SM_Bld_Railing_Straight_031" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 3, 0)
-
-[node name="SM_Bld_Railing_Straight_034" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 3, 0)
-
-[node name="SM_Bld_Railing_Straight_037" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -2.5, 3, 2.5)
-
-[node name="SM_Bld_Railing_Straight_024" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 12.5, 0, 7.5)
-
-[node name="SM_Bld_Railing_Straight_036" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 15, 0, 7.5)
-
-[node name="SM_Bld_Railing_Straight_038" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 17.5, 0, 7.5)
-
-[node name="SM_Bld_Railing_Straight_043" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 15, -2.9292, 7.38392)
-
-[node name="SM_Bld_Railing_Straight_045" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 17.4457, -2.929, 7.5)
-
-[node name="SM_Bld_Railing_Straight_046" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 17.4457, -2.929, 5)
-
-[node name="SM_Bld_Railing_Straight_047" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 17.4457, -2.929, 2.5)
-
-[node name="SM_Bld_Railing_Straight_048" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 17.4457, -2.929, 0)
-
-[node name="SM_Bld_Railing_Straight_049" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 17.4457, -2.929, -2.5)
-
-[node name="SM_Bld_Railing_Straight_050" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 17.4457, -2.929, -5)
-
-[node name="SM_Bld_Railing_Straight_051" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 14.9457, -2.929, -5)
-
-[node name="SM_Bld_Railing_Straight_052" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 12.4457, -2.929, -5)
-
-[node name="SM_Bld_Railing_Straight_053" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 9.94567, -2.929, -5)
-
-[node name="SM_Bld_Railing_Straight_044" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 12.5, -2.9292, 7.38392)
-
-[node name="SM_Bld_Railing_Pillar_Straight_012" parent="." instance=ExtResource("15_77hjl")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 12.5, 0, 5.05)
-
-[node name="SM_Bld_Railing_Pillar_Straight_014" parent="." instance=ExtResource("15_77hjl")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.5, 3, 0.262187)
-
-[node name="SM_Bld_Railing_Pillar_Straight_015" parent="." instance=ExtResource("15_77hjl")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.5, 3, 5.01219)
-
-[node name="SM_Bld_Railing_Pillar_Straight_016" parent="." instance=ExtResource("15_77hjl")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.5, 3, 2.51219)
-
-[node name="SM_Bld_Railing_Straight_023" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10, 0, 2.5)
-
-[node name="SM_Bld_Railing_Pillar_Straight_013" parent="." instance=ExtResource("15_77hjl")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10, 0, 5)
 
 [node name="SM_Bld_Wall_Shop_033" parent="." instance=ExtResource("14_6aqbo")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 12.5, -3, 7.5)
 broken_door_material = ExtResource("15_ro0ie")
 fixed_door_material = ExtResource("16_103ce")
 
-[node name="SM_Bld_Railing_Rail_Straight_012" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.00298363, 2.17626)
-
-[node name="SM_Bld_Railing_Rail_Straight_013" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10, 0.00298363, 2.50096)
-
-[node name="SM_Bld_Railing_Pillar_Straight_018" parent="." instance=ExtResource("15_77hjl")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.49803, 0, 0.000960112)
-
-[node name="SM_Bld_Railing_Rail_Straight_021" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.49803, 0.00298363, 0)
-
-[node name="SM_Bld_Railing_Rail_Straight_016" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10.3202, 3.00298, 2.50096)
-
-[node name="SM_Bld_Railing_Rail_Straight_019" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(1, 0, -1.78814e-07, 0, 1, 0, 1.78814e-07, 0, 1, 7.5702, 3.00298, 5.00096)
-
-[node name="SM_Bld_Railing_Rail_Straight_060" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-1, 0, 2.66237e-07, 0, 1, 0, -2.66237e-07, 0, -1, 7.5702, 2.99878, 0.263099)
-
-[node name="SM_Bld_Railing_Rail_Straight_061" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-1, 0, 2.66237e-07, 0, 1, 0, -2.66237e-07, 0, -1, 5.0702, 2.99878, 0.263099)
-
-[node name="SM_Bld_Railing_Rail_Straight_062" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-1, 0, 2.66237e-07, 0, 1, 0, -2.66237e-07, 0, -1, 2.5702, 2.99878, 0.263099)
-
-[node name="SM_Bld_Railing_Rail_Straight_063" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-1, 0, 2.66237e-07, 0, 1, 0, -2.66237e-07, 0, -1, 0.0702, 2.99878, 0.263099)
-
-[node name="SM_Bld_Railing_Rail_Straight_064" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-2.22525e-07, 0, -1, 0, 1, 0, 1, 0, -2.22525e-07, -2.1798, 2.99878, 0.263099)
-
-[node name="SM_Bld_Railing_Rail_Straight_065" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-2.22525e-07, 0, -1, 0, 1, 0, 1, 0, -2.22525e-07, -2.1798, 2.99878, 5.0131)
-
-[node name="SM_Bld_Railing_Rail_Straight_067" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(1.35103e-07, 0, 1, 0, 1, 0, -1, 0, 1.35103e-07, -5.32932, 3.00451, 7.2631)
-
-[node name="SM_Bld_Railing_Rail_Straight_068" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(1.35103e-07, 0, 1, 0, 1, 0, -1, 0, 1.35103e-07, -5.32932, 3.00451, 4.7631)
-
-[node name="SM_Bld_Railing_Rail_Straight_069" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(1.35103e-07, 0, 1, 0, 1, 0, -1, 0, 1.35103e-07, -5.32932, 3.00451, 2.2631)
-
-[node name="SM_Bld_Railing_Rail_Straight_070" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(1.35103e-07, 0, 1, 0, 1, 0, -1, 0, 1.35103e-07, -5.32932, 3.00451, 0.0130987)
-
-[node name="SM_Bld_Railing_Rail_Straight_071" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(1, 0, -1.78814e-07, 0, 1, 0, 1.78814e-07, 0, 1, -5.07932, 2.99968, -5.32661)
-
-[node name="SM_Bld_Railing_Rail_Straight_072" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(1, 0, -1.78814e-07, 0, 1, 0, 1.78814e-07, 0, 1, -2.57932, 2.99968, -5.32661)
-
-[node name="SM_Bld_Railing_Rail_Straight_066" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-1, 0, 2.66237e-07, 0, 1, 0, -2.66237e-07, 0, -1, -2.33646, 2.99327, 7.58295)
-
-[node name="SM_Bld_Railing_Rail_Straight_017" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10.3202, 3.00298, 0.000959158)
-
-[node name="SM_Bld_Railing_Rail_Straight_018" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10.3202, 3.00298, -4.99904)
-
-[node name="SM_Bld_Railing_Straight_030" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 3, 0)
-
-[node name="SM_Bld_Railing_Rail_Straight_022" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10.3202, 3.00298, -2.49904)
-
-[node name="SM_Bld_Railing_Rail_Straight_014" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 12.82, -0.00695056, 2.50096)
-
-[node name="SM_Bld_Railing_Straight_039" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.492, 0, 4.86731)
-
-[node name="SM_Bld_Railing_Pillar_Straight_017" parent="." instance=ExtResource("15_77hjl")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.492, 0, -2.68269)
-
-[node name="SM_Bld_Railing_Rail_Straight_024" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 17.172, -0.00695056, 7.36635)
-
-[node name="SM_Bld_Railing_Straight_040" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.492, 0, 2.36731)
-
-[node name="SM_Bld_Railing_Rail_Straight_025" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 17.172, -0.00695056, 4.86635)
-
-[node name="SM_Bld_Railing_Straight_041" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.492, 0, -0.132693)
-
-[node name="SM_Bld_Railing_Rail_Straight_026" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 17.172, -0.00695056, 2.36635)
-
-[node name="SM_Bld_Railing_Straight_042" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.492, 0, -2.63269)
-
-[node name="SM_Bld_Railing_Rail_Straight_027" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 17.172, -0.00695056, -0.133654)
-
-[node name="SM_Bld_Railing_Straight_055" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 19.7521, 0, -2.49086)
-
-[node name="SM_Bld_Railing_Rail_Straight_040" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-2.18557e-07, 0, -1, 0, 1, 0, 1, 0, -2.18557e-07, 20.0721, -0.00695056, -4.98991)
-
-[node name="SM_Bld_Railing_Straight_056" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 19.7521, 0, 0.00913525)
-
-[node name="SM_Bld_Railing_Rail_Straight_041" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-2.18557e-07, 0, -1, 0, 1, 0, 1, 0, -2.18557e-07, 20.0721, -0.00695056, -2.4899)
-
-[node name="SM_Bld_Railing_Straight_057" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 19.7521, 0, 2.50914)
-
-[node name="SM_Bld_Railing_Rail_Straight_042" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-2.18557e-07, 0, -1, 0, 1, 0, 1, 0, -2.18557e-07, 20.0721, -0.00695056, 0.0100954)
-
-[node name="SM_Bld_Railing_Straight_058" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 19.7521, 0, 5.00914)
-
-[node name="SM_Bld_Railing_Rail_Straight_043" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-2.18557e-07, 0, -1, 0, 1, 0, 1, 0, -2.18557e-07, 20.0721, -0.00695056, 2.5101)
-
-[node name="SM_Bld_Railing_Straight_059" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 19.7521, 0, 7.50914)
-
-[node name="SM_Bld_Railing_Rail_Straight_044" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-2.18557e-07, 0, -1, 0, 1, 0, 1, 0, -2.18557e-07, 20.0721, -0.00695056, 5.0101)
-
-[node name="SM_Bld_Railing_Straight_060" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 19.7521, 0, 7.50914)
-
-[node name="SM_Bld_Railing_Rail_Straight_045" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-2.18557e-07, 0, -1, 0, 1, 0, 1, 0, -2.18557e-07, 20.0721, -0.00695056, 5.0101)
-
-[node name="SM_Bld_Railing_Straight_061" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 19.7521, 0, 10.0091)
-
-[node name="SM_Bld_Railing_Rail_Straight_046" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-2.18557e-07, 0, -1, 0, 1, 0, 1, 0, -2.18557e-07, 20.0721, -0.00695056, 7.5101)
-
-[node name="SM_Bld_Railing_Straight_062" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(1, 0, -1.74846e-07, 0, 1, 0, 1.74846e-07, 0, 1, 17.228, 0, 10.0135)
-
-[node name="SM_Bld_Railing_Rail_Straight_047" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-1, 0, 2.62268e-07, 0, 1, 0, -2.62268e-07, 0, -1, 19.727, -0.00695056, 10.3335)
-
-[node name="SM_Bld_Railing_Straight_063" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(1, 0, -1.74846e-07, 0, 1, 0, 1.74846e-07, 0, 1, 14.728, 0, 10.0135)
-
-[node name="SM_Bld_Railing_Rail_Straight_048" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-1, 0, 2.62268e-07, 0, 1, 0, -2.62268e-07, 0, -1, 17.227, -0.00695056, 10.3335)
-
-[node name="SM_Bld_Railing_Straight_064" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(1, 0, -1.74846e-07, 0, 1, 0, 1.74846e-07, 0, 1, 12.228, 0, 10.0135)
-
-[node name="SM_Bld_Railing_Rail_Straight_049" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-1, 0, 2.62268e-07, 0, 1, 0, -2.62268e-07, 0, -1, 14.727, -0.00695056, 10.3335)
-
-[node name="SM_Bld_Railing_Straight_065" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(1, 0, -1.74846e-07, 0, 1, 0, 1.74846e-07, 0, 1, 9.72797, 0, 10.0135)
-
-[node name="SM_Bld_Railing_Rail_Straight_050" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-1, 0, 2.62268e-07, 0, 1, 0, -2.62268e-07, 0, -1, 12.227, -0.00695056, 10.3335)
-
-[node name="SM_Bld_Railing_Straight_066" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(1, 0, -1.74846e-07, 0, 1, 0, 1.74846e-07, 0, 1, 7.22797, 0, 10.0135)
-
-[node name="SM_Bld_Railing_Rail_Straight_051" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-1, 0, 2.62268e-07, 0, 1, 0, -2.62268e-07, 0, -1, 9.72701, -0.00695056, 10.3335)
-
-[node name="SM_Bld_Railing_Straight_067" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(1, 0, -1.74846e-07, 0, 1, 0, 1.74846e-07, 0, 1, 4.72797, 0, 10.0135)
-
-[node name="SM_Bld_Railing_Rail_Straight_052" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-1, 0, 2.62268e-07, 0, 1, 0, -2.62268e-07, 0, -1, 7.22701, -0.00695056, 10.3335)
-
-[node name="SM_Bld_Railing_Straight_068" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(1, 0, -1.74846e-07, 0, 1, 0, 1.74846e-07, 0, 1, 2.22797, 0, 10.0135)
-
-[node name="SM_Bld_Railing_Rail_Straight_053" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-1, 0, 2.62268e-07, 0, 1, 0, -2.62268e-07, 0, -1, 4.72701, -0.00695056, 10.3335)
-
-[node name="SM_Bld_Railing_Straight_069" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(1, 0, -1.74846e-07, 0, 1, 0, 1.74846e-07, 0, 1, -0.272032, 0, 10.0135)
-
-[node name="SM_Bld_Railing_Rail_Straight_054" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-1, 0, 2.62268e-07, 0, 1, 0, -2.62268e-07, 0, -1, 2.22701, -0.00695056, 10.3335)
-
-[node name="SM_Bld_Railing_Straight_070" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(1, 0, -1.74846e-07, 0, 1, 0, 1.74846e-07, 0, 1, -2.52203, 0, 10.0135)
-
-[node name="SM_Bld_Railing_Rail_Straight_055" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-1, 0, 2.62268e-07, 0, 1, 0, -2.62268e-07, 0, -1, -0.022995, -0.00695056, 10.3335)
-
-[node name="SM_Bld_Railing_Straight_088" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(1, 0, -1.74846e-07, 0, 1, 0, 1.74846e-07, 0, 1, -5.02203, 0, 10.0135)
-
-[node name="SM_Bld_Railing_Rail_Straight_078" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-1, 0, 2.62268e-07, 0, 1, 0, -2.62268e-07, 0, -1, -2.52299, -0.00695056, 10.3335)
-
-[node name="SM_Bld_Railing_Straight_071" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-2.18557e-07, 0, -1, 0, 1, 0, 1, 0, -2.18557e-07, -5.00651, 0, 7.42402)
-
-[node name="SM_Bld_Railing_Rail_Straight_056" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(3.36578e-07, 0, 1, 0, 1, 0, -1.1, 0, 3.0598e-07, -5.32651, -0.00695056, 10.1731)
-
-[node name="SM_Bld_Railing_Straight_072" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-2.18557e-07, 0, -1, 0, 1, 0, 1, 0, -2.18557e-07, -5.00651, 0, 4.92402)
-
-[node name="SM_Bld_Railing_Rail_Straight_057" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(3.0598e-07, 0, 1, 0, 1, 0, -1, 0, 3.0598e-07, -5.32651, -0.00695056, 7.42306)
-
-[node name="SM_Bld_Railing_Straight_073" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-2.18557e-07, 0, -1, 0, 1, 0, 1, 0, -2.18557e-07, -5.00651, 0, 2.42402)
-
-[node name="SM_Bld_Railing_Rail_Straight_058" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(3.0598e-07, 0, 1, 0, 1, 0, -1, 0, 3.0598e-07, -5.32651, -0.00695056, 4.92306)
-
-[node name="SM_Bld_Railing_Straight_074" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-2.18557e-07, 0, -1, 0, 1, 0, 1, 0, -2.18557e-07, -5.00651, 0, -0.0759783)
-
-[node name="SM_Bld_Railing_Rail_Straight_059" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(3.0598e-07, 0, 1, 0, 1, 0, -1, 0, 3.0598e-07, -5.32651, -0.00695056, 2.42306)
-
-[node name="SM_Bld_Railing_Straight_089" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-2.18557e-07, 0, -1, 0, 1, 0, 1, 0, -2.18557e-07, -5.00651, 0, -2.57598)
-
-[node name="SM_Bld_Railing_Rail_Straight_079" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(3.0598e-07, 0, 1, 0, 1, 0, -1, 0, 3.0598e-07, -5.32651, -0.00695056, -0.0769415)
-
-[node name="SM_Bld_Railing_Straight_090" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-2.18557e-07, 0, -1, 0, 1, 0, 1, 0, -2.18557e-07, -5.00651, 0, -5.07598)
-
-[node name="SM_Bld_Railing_Rail_Straight_080" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(3.0598e-07, 0, 1, 0, 1, 0, -1, 0, 3.0598e-07, -5.32651, -0.00695056, -2.57694)
-
-[node name="SM_Bld_Railing_Rail_Straight_081" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(0.999767, 0, -0.0215884, 0, 1, 0, 0.0215884, 0, 0.999767, -5.07651, -0.00695056, -5.32694)
-
-[node name="SM_Bld_Railing_Rail_Straight_082" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(1.12976, 0, -0.0321089, 0, 1, 0, 0.036294, 0, 0.999484, -2.57651, -0.00695056, -5.27126)
-
-[node name="SM_Bld_Railing_Straight_054" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 19.8315, 0, -5.02505)
-
-[node name="SM_Bld_Railing_Rail_Straight_039" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(1, 0, -1.74845e-07, 0, 1, 0, 1.74845e-07, 0, 1, 17.3325, -0.00695056, -5.34505)
-
-[node name="SM_Bld_Railing_Rail_Straight_015" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 12.82, -0.00695056, 5.00096)
-
-[node name="SM_Bld_Railing_Rail_Straight_020" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 15.07, -0.00695056, 7.50096)
-
-[node name="SM_Bld_Railing_Rail_Straight_023" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-0.9, 0, 8.74228e-08, 0, 1, 0, -7.86805e-08, 0, -1, 17.32, -0.00695056, 7.50096)
-
-[node name="SM_Bld_Railing_Rail_Straight_028" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-0.982345, 0, 1.50996e-07, 0, 1, 0, -1.4833e-07, 0, -1, 17.4557, -2.9292, -4.83538)
-
-[node name="SM_Bld_Railing_Rail_Straight_032" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-1.07284e-07, 0, -1, 0, 1, 0, 1, 0, -1.07284e-07, 17.75, -2.9292, -4.99931)
-
-[node name="SM_Bld_Railing_Rail_Straight_033" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-1.07284e-07, 0, -1, 0, 1, 0, 1, 0, -1.07284e-07, 17.75, -2.9292, -2.49931)
-
-[node name="SM_Bld_Railing_Rail_Straight_034" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-1.07284e-07, 0, -1, 0, 1, 0, 1, 0, -1.07284e-07, 17.75, -2.9292, 0.000693798)
-
-[node name="SM_Bld_Railing_Rail_Straight_035" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-1.07284e-07, 0, -1, 0, 1, 0, 1, 0, -1.07284e-07, 17.75, -2.9292, 2.50069)
-
-[node name="SM_Bld_Railing_Rail_Straight_036" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-1.07284e-07, 0, -1, 0, 1, 0, 1, 0, -1.07284e-07, 17.75, -2.9292, 5.00069)
-
-[node name="SM_Bld_Railing_Rail_Straight_037" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 17.75, -2.9292, 7.72975)
-
-[node name="SM_Bld_Railing_Rail_Straight_038" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 15.25, -2.9292, 7.72975)
-
-[node name="SM_Bld_Railing_Rail_Straight_029" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 15, -2.9292, -4.83538)
-
-[node name="SM_Bld_Railing_Rail_Straight_030" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 12.5, -2.9292, -4.83538)
-
-[node name="SM_Bld_Railing_Rail_Straight_031" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 10, -2.9292, -4.83538)
-
 [node name="Node3D" parent="." instance=ExtResource("7_kk2rg")]
 transform = Transform3D(9.60591, 0, 0, 0, 1, 0, 0, 0, 1.82127, 2.44411, 2.92634, 3.80595)
-
-[node name="SM_Bld_Railing_Straight_014" parent="." instance=ExtResource("8_b5spy")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.5, 0, -4.99165)
-
-[node name="SM_Bld_Railing_Straight_015" parent="." instance=ExtResource("8_b5spy")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.5, 0, -2.5)
-
-[node name="SM_Bld_Railing_Pillar_Straight_019" parent="." instance=ExtResource("15_77hjl")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.5, 0, -2.48781)
-
-[node name="SM_Bld_Railing_Pillar_Straight_020" parent="." instance=ExtResource("15_77hjl")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.5, 0, -4.98781)
 
 [node name="Node3D2" parent="." instance=ExtResource("7_kk2rg")]
 transform = Transform3D(9.99015, 0, 0, 0, 1, 0, 0, 0, 1.82127, 12.4441, -0.0736599, -3.69405)
 
-[node name="SM_Bld_Railing_Pillar_012" parent="." instance=ExtResource("19_77hjl")]
-transform = Transform3D(2.64309, 0, 0.759341, 0, 2.75, 0, -0.759341, 0, 2.64309, 12.4407, -2.94023, 2.46134)
-
-[node name="SM_Bld_Railing_Pillar_020" parent="." instance=ExtResource("19_77hjl")]
-transform = Transform3D(2.64309, 0, 0.759341, 0, 2.75, 0, -0.759341, 0, 2.64309, 12.4407, -2.94023, 7.21134)
-
-[node name="SM_Bld_Railing_Pillar_014" parent="." instance=ExtResource("19_77hjl")]
-transform = Transform3D(2.61003, 0, 0.866167, 0, 2.75, 0, -0.866167, 0, 2.61003, 7.42034, 0.144562, 0.020459)
-
-[node name="SM_Bld_Railing_Pillar_022" parent="." instance=ExtResource("19_77hjl")]
-transform = Transform3D(2.61003, 0, 0.866167, 0, 2.75, 0, -0.866167, 0, 2.61003, 7.32561, 0.144562, -5.04647)
-
-[node name="SM_Bld_Railing_Pillar_024" parent="." instance=ExtResource("19_77hjl")]
-transform = Transform3D(2.61003, 0, 0.866167, 0, 3.02827, 0, -0.866167, 0, 2.61003, 7.32561, -2.85544, -5.04647)
-
-[node name="SM_Bld_Railing_Pillar_015" parent="." instance=ExtResource("19_77hjl")]
-transform = Transform3D(2.61003, 0, 0.866167, 0, 2.75, 0, -0.866167, 0, 2.61003, 2.66364, 0.144562, -0.253478)
-
-[node name="SM_Bld_Railing_Pillar_021" parent="." instance=ExtResource("19_77hjl")]
-transform = Transform3D(1.82881, 0, 2.05376, 0, 2.75, 0, -2.05376, 0, 1.82881, 0.146858, 0.144562, -4.84669)
-
-[node name="SM_Bld_Railing_Pillar_018" parent="." instance=ExtResource("19_77hjl")]
-transform = Transform3D(0.556913, 0, 2.69302, 0, 2.75, 0, -2.69302, 0, 0.556913, 7.29957, 0.144562, 2.63076)
-
-[node name="SM_Bld_Railing_Pillar_019" parent="." instance=ExtResource("19_77hjl")]
-transform = Transform3D(1.47987, 0.00336204, 2.31786, 0.00156391, 2.74999, -0.00498738, -2.31786, 0.00400205, 1.47987, 7.4298, 0.149251, 4.90731)
-
-[node name="SM_Bld_Railing_Pillar_013" parent="." instance=ExtResource("19_77hjl")]
-transform = Transform3D(-0.400494, 0, 2.72068, 0, 2.75, 0, -2.72068, 0, -0.400494, 9.93837, -2.86201, 2.52485)
-
-[node name="SM_Bld_Railing_Pillar_Corner_Outer_012" parent="." instance=ExtResource("20_6aqbo")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 12.5, 0, 7.5)
-
-[node name="SM_Bld_Railing_Pillar_Corner_Outer_014" parent="." instance=ExtResource("20_6aqbo")]
-transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 17.4958, 2.38419e-07, 7.49982)
-
-[node name="laser puzzle" parent="." node_paths=PackedStringArray("puzzle_start") instance=ExtResource("20_ro0ie")]
-puzzle_start = NodePath("../SM_Switch_Lever_022")
+[node name="laser puzzle" parent="." node_paths=PackedStringArray("beam_origin", "puzzle_start", "mirrors") instance=ExtResource("20_ro0ie")]
+beam_origin = NodePath("laser_origin")
+puzzle_start = NodePath("laser_activation_lever")
+mirrors = [NodePath("SM_Prop_Satellite_1"), NodePath("SM_Prop_Satellite_2"), NodePath("SM_Prop_Satellite_3")]
 is_solved = true
 
 [node name="SM_Prop_Satellite_1" parent="laser puzzle" instance=ExtResource("21_ro0ie")]
@@ -855,80 +58,885 @@ rotation_axis = Vector3(0, 0, 1)
 [node name="SM_Prop_Satellite_3" parent="laser puzzle" instance=ExtResource("21_ro0ie")]
 transform = Transform3D(0.0178837, -0.197939, 0.0223689, -0.194089, -0.0122605, 0.0466811, -0.0448288, -0.0258819, -0.193185, 6.80389, 1.6122, 0.0153607)
 
-[node name="SM_Bld_Railing_Pillar_Corner_Outer_013" parent="." instance=ExtResource("20_6aqbo")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.5, 3, 0)
-
-[node name="SM_Bld_Railing_Straight_075" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -2.5, 3, 7.5)
-
-[node name="SM_Bld_Railing_Straight_077" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-4.37112e-08, 0, -1, 0, 1, 0, 1, 0, -4.37112e-08, -5, 3, 5)
-
-[node name="SM_Bld_Railing_Straight_078" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-4.37112e-08, 0, -1, 0, 1, 0, 1, 0, -4.37112e-08, -5, 3, 2.5)
-
-[node name="SM_Bld_Railing_Straight_079" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-4.37112e-08, 0, -1, 0, 1, 0, 1, 0, -4.37112e-08, -5, 3, 0)
-
-[node name="SM_Bld_Railing_Straight_080" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-4.37112e-08, 0, -1, 0, 1, 0, 1, 0, -4.37112e-08, -5, 3, -2.25)
-
-[node name="SM_Bld_Railing_Rail_Straight_073" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(1.35103e-07, 0, 1, 0, 1, 0, -1, 0, 1.35103e-07, -5.32932, 3.00451, -2.4869)
-
-[node name="SM_Bld_Railing_Straight_081" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-4.37112e-08, 0, -1, 0, 1, 0, 1, 0, -4.37112e-08, -5, 3, -4.75)
-
-[node name="SM_Bld_Railing_Straight_082" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-1, 0, 8.74226e-08, 0, 1, 0, -8.74226e-08, 0, -1, -2.5, 3, -5)
-
-[node name="SM_Bld_Railing_Straight_083" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-1, 0, 8.74226e-08, 0, 1, 0, -8.74226e-08, 0, -1, 0, 3, -5)
-
-[node name="SM_Bld_Railing_Rail_Straight_074" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(1, 0, -1.78814e-07, 0, 1, 0, 1.78814e-07, 0, 1, -0.0793195, 2.99968, -5.32661)
-
-[node name="SM_Bld_Railing_Straight_084" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-1, 0, 8.74226e-08, 0, 1, 0, -8.74226e-08, 0, -1, 2.5, 3, -5)
-
-[node name="SM_Bld_Railing_Rail_Straight_075" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(1, 0, -1.78814e-07, 0, 1, 0, 1.78814e-07, 0, 1, 2.42068, 2.99968, -5.32661)
-
-[node name="SM_Bld_Railing_Straight_085" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-1, 0, 8.74226e-08, 0, 1, 0, -8.74226e-08, 0, -1, 5, 3, -5)
-
-[node name="SM_Bld_Railing_Rail_Straight_076" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(1, 0, -1.78814e-07, 0, 1, 0, 1.78814e-07, 0, 1, 4.92068, 2.99968, -5.32661)
-
-[node name="SM_Bld_Railing_Straight_086" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-1, 0, 8.74226e-08, 0, 1, 0, -8.74226e-08, 0, -1, 7.5, 3, -5)
-
-[node name="SM_Bld_Railing_Rail_Straight_077" parent="." instance=ExtResource("17_mwyo0")]
-transform = Transform3D(1, 0, -1.78814e-07, 0, 1, 0, 1.78814e-07, 0, 1, 7.42068, 2.99968, -5.32661)
-
-[node name="SM_Bld_Railing_Straight_087" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(-1, 0, 8.74226e-08, 0, 1, 0, -8.74226e-08, 0, -1, 10, 3, -5)
-
-[node name="SM_Bld_Railing_Straight_076" parent="." instance=ExtResource("14_s76x2")]
-transform = Transform3D(1, 0, -1.74845e-07, 0, 1, 0, 1.74845e-07, 0, 1, -5, 3, 7.25)
-
-[node name="SM_Prop_Greebles_21_no_ends" parent="." groups=["tint_red"] instance=ExtResource("22_85lt4")]
+[node name="cable_mid" parent="laser puzzle" groups=["tint_red"] instance=ExtResource("22_85lt4")]
 transform = Transform3D(9.83506e-08, -0.87167, 0, 0.75, 1.14306e-07, 0, 0, 0, 0.75, 5.2528, 0.525128, -0.202947)
 
-[node name="SM_Prop_Greebles_21_no_ends2" parent="." groups=["tint_red"] instance=ExtResource("22_85lt4")]
+[node name="cable_end" parent="laser puzzle" groups=["tint_red"] instance=ExtResource("22_85lt4")]
 transform = Transform3D(-0.75, -4.01224e-08, 0, 6.55671e-08, -0.458946, 0, 0, 0, 0.75, 4.07253, 0.525128, -0.202947)
 
-[node name="SM_Prop_Greebles_212" parent="." groups=["tint_red"] instance=ExtResource("23_xgstd")]
+[node name="cable_begin" parent="laser puzzle" groups=["tint_red"] instance=ExtResource("23_xgstd")]
 transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 5.29473, 0.526414, -0.195655)
 
-[node name="SM_Switch_Lever_022" parent="." groups=["tint_red"] instance=ExtResource("23_pb36m")]
+[node name="laser_activation_lever" parent="laser puzzle" groups=["tint_red"] instance=ExtResource("23_pb36m")]
 transform = Transform3D(-1, 8.74228e-08, -3.82137e-15, 0, -4.37114e-08, -1, -8.74228e-08, -1, 4.37114e-08, 5.29215, 1.60472, -0.106373)
+
+[node name="laser_origin" parent="laser puzzle" groups=["tint_red"] instance=ExtResource("10_r47aq")]
+transform = Transform3D(2, 0, 0, 0, -8.74228e-08, 2, 0, -2, -8.74228e-08, 4.0727, 0.522993, -0.0485402)
 
 [node name="SM_Bld_Base_Wall_Door_012" parent="." instance=ExtResource("25_xgstd")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.5, 0, 0)
 
-[node name="SM_Bld_Base_Pillar_012" parent="." instance=ExtResource("26_ttvoq")]
+[node name="SM_Prop_Pill_Dispenser_013" parent="." instance=ExtResource("27_rw4oa")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7.06931, 0.00809082, 4.25887)
+
+[node name="static_mesh" type="Node3D" parent="."]
+
+[node name="SM_Bld_Railing_Pillar_Corner_Outer_013" parent="static_mesh" instance=ExtResource("20_6aqbo")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.5, 3, 0)
+
+[node name="SM_Bld_Railing_Straight_075" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -2.5, 3, 7.5)
+
+[node name="SM_Bld_Railing_Straight_077" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-4.37112e-08, 0, -1, 0, 1, 0, 1, 0, -4.37112e-08, -5, 3, 5)
+
+[node name="SM_Bld_Railing_Straight_078" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-4.37112e-08, 0, -1, 0, 1, 0, 1, 0, -4.37112e-08, -5, 3, 2.5)
+
+[node name="SM_Bld_Railing_Straight_079" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-4.37112e-08, 0, -1, 0, 1, 0, 1, 0, -4.37112e-08, -5, 3, 0)
+
+[node name="SM_Bld_Railing_Straight_080" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-4.37112e-08, 0, -1, 0, 1, 0, 1, 0, -4.37112e-08, -5, 3, -2.25)
+
+[node name="SM_Bld_Railing_Rail_Straight_073" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(1.35103e-07, 0, 1, 0, 1, 0, -1, 0, 1.35103e-07, -5.32932, 3.00451, -2.4869)
+
+[node name="SM_Bld_Railing_Straight_081" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-4.37112e-08, 0, -1, 0, 1, 0, 1, 0, -4.37112e-08, -5, 3, -4.75)
+
+[node name="SM_Bld_Railing_Straight_082" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-1, 0, 8.74226e-08, 0, 1, 0, -8.74226e-08, 0, -1, -2.5, 3, -5)
+
+[node name="SM_Bld_Railing_Straight_083" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-1, 0, 8.74226e-08, 0, 1, 0, -8.74226e-08, 0, -1, 0, 3, -5)
+
+[node name="SM_Bld_Railing_Rail_Straight_074" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(1, 0, -1.78814e-07, 0, 1, 0, 1.78814e-07, 0, 1, -0.0793195, 2.99968, -5.32661)
+
+[node name="SM_Bld_Railing_Straight_084" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-1, 0, 8.74226e-08, 0, 1, 0, -8.74226e-08, 0, -1, 2.5, 3, -5)
+
+[node name="SM_Bld_Railing_Rail_Straight_075" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(1, 0, -1.78814e-07, 0, 1, 0, 1.78814e-07, 0, 1, 2.42068, 2.99968, -5.32661)
+
+[node name="SM_Bld_Railing_Straight_085" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-1, 0, 8.74226e-08, 0, 1, 0, -8.74226e-08, 0, -1, 5, 3, -5)
+
+[node name="SM_Bld_Railing_Rail_Straight_076" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(1, 0, -1.78814e-07, 0, 1, 0, 1.78814e-07, 0, 1, 4.92068, 2.99968, -5.32661)
+
+[node name="SM_Bld_Railing_Straight_086" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-1, 0, 8.74226e-08, 0, 1, 0, -8.74226e-08, 0, -1, 7.5, 3, -5)
+
+[node name="SM_Bld_Railing_Rail_Straight_077" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(1, 0, -1.78814e-07, 0, 1, 0, 1.78814e-07, 0, 1, 7.42068, 2.99968, -5.32661)
+
+[node name="SM_Bld_Railing_Straight_087" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-1, 0, 8.74226e-08, 0, 1, 0, -8.74226e-08, 0, -1, 10, 3, -5)
+
+[node name="SM_Bld_Railing_Straight_076" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(1, 0, -1.74845e-07, 0, 1, 0, 1.74845e-07, 0, 1, -5, 3, 7.25)
+
+[node name="SM_Bld_Base_Pillar_012" parent="static_mesh" instance=ExtResource("26_ttvoq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, 0)
 
-[node name="SM_Prop_Pill_Dispenser_012" parent="." instance=ExtResource("27_rw4oa")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7.01681, 0.00809082, 3.75887)
+[node name="SM_Bld_Railing_Pillar_012" parent="static_mesh" instance=ExtResource("19_77hjl")]
+transform = Transform3D(2.64309, 0, 0.759341, 0, 2.75, 0, -0.759341, 0, 2.64309, 12.4407, -2.94023, 2.46134)
+
+[node name="SM_Bld_Railing_Pillar_020" parent="static_mesh" instance=ExtResource("19_77hjl")]
+transform = Transform3D(2.64309, 0, 0.759341, 0, 2.75, 0, -0.759341, 0, 2.64309, 12.4407, -2.94023, 7.21134)
+
+[node name="SM_Bld_Railing_Pillar_014" parent="static_mesh" instance=ExtResource("19_77hjl")]
+transform = Transform3D(2.61003, 0, 0.866167, 0, 2.75, 0, -0.866167, 0, 2.61003, 7.42034, 0.144562, 0.020459)
+
+[node name="SM_Bld_Railing_Pillar_022" parent="static_mesh" instance=ExtResource("19_77hjl")]
+transform = Transform3D(2.61003, 0, 0.866167, 0, 2.75, 0, -0.866167, 0, 2.61003, 7.32561, 0.144562, -5.04647)
+
+[node name="SM_Bld_Railing_Pillar_024" parent="static_mesh" instance=ExtResource("19_77hjl")]
+transform = Transform3D(2.61003, 0, 0.866167, 0, 3.02827, 0, -0.866167, 0, 2.61003, 7.32561, -2.85544, -5.04647)
+
+[node name="SM_Bld_Railing_Pillar_015" parent="static_mesh" instance=ExtResource("19_77hjl")]
+transform = Transform3D(2.61003, 0, 0.866167, 0, 2.75, 0, -0.866167, 0, 2.61003, 2.66364, 0.144562, -0.253478)
+
+[node name="SM_Bld_Railing_Pillar_021" parent="static_mesh" instance=ExtResource("19_77hjl")]
+transform = Transform3D(1.82881, 0, 2.05376, 0, 2.75, 0, -2.05376, 0, 1.82881, 0.146858, 0.144562, -4.84669)
+
+[node name="SM_Bld_Railing_Pillar_018" parent="static_mesh" instance=ExtResource("19_77hjl")]
+transform = Transform3D(0.556913, 0, 2.69302, 0, 2.75, 0, -2.69302, 0, 0.556913, 7.29957, 0.144562, 2.63076)
+
+[node name="SM_Bld_Railing_Pillar_019" parent="static_mesh" instance=ExtResource("19_77hjl")]
+transform = Transform3D(1.47987, 0.00336204, 2.31786, 0.00156391, 2.74999, -0.00498738, -2.31786, 0.00400205, 1.47987, 7.4298, 0.149251, 4.90731)
+
+[node name="SM_Bld_Railing_Pillar_013" parent="static_mesh" instance=ExtResource("19_77hjl")]
+transform = Transform3D(-0.400494, 0, 2.72068, 0, 2.75, 0, -2.72068, 0, -0.400494, 9.93837, -2.86201, 2.52485)
+
+[node name="SM_Bld_Railing_Pillar_Corner_Outer_012" parent="static_mesh" instance=ExtResource("20_6aqbo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 12.5, 0, 7.5)
+
+[node name="SM_Bld_Railing_Pillar_Corner_Outer_014" parent="static_mesh" instance=ExtResource("20_6aqbo")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 17.4958, 2.38419e-07, 7.49982)
+
+[node name="SM_Bld_Railing_Rail_Straight_039" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(1, 0, -1.74845e-07, 0, 1, 0, 1.74845e-07, 0, 1, 17.3325, -0.00695056, -5.34505)
+
+[node name="SM_Bld_Railing_Rail_Straight_015" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 12.82, -0.00695056, 5.00096)
+
+[node name="SM_Bld_Railing_Rail_Straight_020" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 15.07, -0.00695056, 7.50096)
+
+[node name="SM_Bld_Railing_Rail_Straight_023" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-0.9, 0, 8.74228e-08, 0, 1, 0, -7.86805e-08, 0, -1, 17.32, -0.00695056, 7.50096)
+
+[node name="SM_Bld_Railing_Rail_Straight_028" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-0.982345, 0, 1.50996e-07, 0, 1, 0, -1.4833e-07, 0, -1, 17.4557, -2.9292, -4.83538)
+
+[node name="SM_Bld_Railing_Rail_Straight_032" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-1.07284e-07, 0, -1, 0, 1, 0, 1, 0, -1.07284e-07, 17.75, -2.9292, -4.99931)
+
+[node name="SM_Bld_Railing_Rail_Straight_033" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-1.07284e-07, 0, -1, 0, 1, 0, 1, 0, -1.07284e-07, 17.75, -2.9292, -2.49931)
+
+[node name="SM_Bld_Railing_Rail_Straight_034" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-1.07284e-07, 0, -1, 0, 1, 0, 1, 0, -1.07284e-07, 17.75, -2.9292, 0.000693798)
+
+[node name="SM_Bld_Railing_Rail_Straight_035" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-1.07284e-07, 0, -1, 0, 1, 0, 1, 0, -1.07284e-07, 17.75, -2.9292, 2.50069)
+
+[node name="SM_Bld_Railing_Rail_Straight_036" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-1.07284e-07, 0, -1, 0, 1, 0, 1, 0, -1.07284e-07, 17.75, -2.9292, 5.00069)
+
+[node name="SM_Bld_Railing_Rail_Straight_037" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 17.75, -2.9292, 7.72975)
+
+[node name="SM_Bld_Railing_Rail_Straight_038" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 15.25, -2.9292, 7.72975)
+
+[node name="SM_Bld_Railing_Rail_Straight_029" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 15, -2.9292, -4.83538)
+
+[node name="SM_Bld_Railing_Rail_Straight_030" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 12.5, -2.9292, -4.83538)
+
+[node name="SM_Bld_Railing_Rail_Straight_031" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 10, -2.9292, -4.83538)
+
+[node name="stairs" parent="static_mesh" instance=ExtResource("6_rurhu")]
+
+[node name="SM_Bld_Railing_Straight_012" parent="static_mesh" instance=ExtResource("8_b5spy")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7.5, 3, 2.50835)
+
+[node name="SM_Bld_Railing_Straight_013" parent="static_mesh" instance=ExtResource("8_b5spy")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.5, 3, 5)
+
+[node name="SM_Bld_Stairs_012" parent="static_mesh" instance=ExtResource("9_tcjrq")]
+transform = Transform3D(-0.919239, 0, 0.707107, 0, 1, 0, -0.919239, 0, -0.707107, 11.6578, -3, 0.657803)
+
+[node name="SM_Bld_Stairs_013" parent="static_mesh" instance=ExtResource("9_tcjrq")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10, -1.57425, 2.5)
+
+[node name="SM_Bld_Base_45_Floor_Combined_012" parent="static_mesh" instance=ExtResource("10_rvs2r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, -1.5, 0)
+
+[node name="SM_Bld_Stairwell_Wall_022" parent="static_mesh" instance=ExtResource("11_tqxxy")]
+transform = Transform3D(-0.664771, 0, -0.707107, 0, 1.27447, 0, 0.664771, 0, -0.707107, 11.7082, -3.16155, 0.67595)
+
+[node name="SM_Bld_Stairwell_Wall_023" parent="static_mesh" instance=ExtResource("11_tqxxy")]
+transform = Transform3D(-0.712924, 0, -0.707107, 0, 1.27447, 0, 0.712924, 0, -0.707107, 9.29958, -3.16155, -1.73268)
+
+[node name="SM_Bld_Railing_Straight_032" parent="static_mesh" instance=ExtResource("12_liy57")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 12.5, 0, 2.5)
+
+[node name="SM_Bld_Railing_Straight_033" parent="static_mesh" instance=ExtResource("12_liy57")]
+transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 7.5, 3, 5)
+
+[node name="SM_Bld_Railing_Straight_035" parent="static_mesh" instance=ExtResource("12_liy57")]
+transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 0, 3, 0)
+
+[node name="SM_Bld_Railing_Pillar_Corner_Inner_012" parent="static_mesh" instance=ExtResource("13_mwyo0")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 12.5, 0, 2.5)
+
+[node name="SM_Bld_Railing_Pillar_Corner_Inner_017" parent="static_mesh" instance=ExtResource("13_mwyo0")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 17.5, 0, -5)
+
+[node name="SM_Bld_Railing_Pillar_Corner_Inner_020" parent="static_mesh" instance=ExtResource("13_mwyo0")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 19.75, 0, -5)
+
+[node name="SM_Bld_Railing_Pillar_Corner_Inner_021" parent="static_mesh" instance=ExtResource("13_mwyo0")]
+transform = Transform3D(1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 19.75, 0, 10)
+
+[node name="SM_Bld_Railing_Pillar_Corner_Inner_022" parent="static_mesh" instance=ExtResource("13_mwyo0")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -5, 0, 10)
+
+[node name="SM_Bld_Railing_Pillar_Corner_Inner_026" parent="static_mesh" instance=ExtResource("13_mwyo0")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -5, 0, -5)
+
+[node name="SM_Bld_Railing_Pillar_Corner_Inner_018" parent="static_mesh" instance=ExtResource("13_mwyo0")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 17.4265, -2.9292, -4.84943)
+
+[node name="SM_Bld_Railing_Pillar_Corner_Inner_019" parent="static_mesh" instance=ExtResource("13_mwyo0")]
+transform = Transform3D(1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 17.4416, -2.9292, 7.40057)
+
+[node name="SM_Bld_Railing_Pillar_Corner_Inner_014" parent="static_mesh" instance=ExtResource("13_mwyo0")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 3, -5)
+
+[node name="SM_Bld_Railing_Pillar_Corner_Inner_015" parent="static_mesh" instance=ExtResource("13_mwyo0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 3, 5)
+
+[node name="SM_Bld_Railing_Pillar_Corner_Inner_023" parent="static_mesh" instance=ExtResource("13_mwyo0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 3, 7.25)
+
+[node name="SM_Bld_Railing_Pillar_Corner_Inner_024" parent="static_mesh" instance=ExtResource("13_mwyo0")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -5, 3, 7.25)
+
+[node name="SM_Bld_Railing_Pillar_Corner_Inner_025" parent="static_mesh" instance=ExtResource("13_mwyo0")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -5, 3, -5)
+
+[node name="SM_Bld_Railing_Pillar_Corner_Inner_016" parent="static_mesh" instance=ExtResource("13_mwyo0")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7.5, 3, 5)
+
+[node name="SM_Bld_Railing_Pillar_Corner_Inner_013" parent="static_mesh" instance=ExtResource("13_mwyo0")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10, 0, 2.5)
+
+[node name="SM_Bld_Railing_Straight_022" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 12.5, 0, 5)
+
+[node name="SM_Bld_Railing_Straight_025" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 3, 5)
+
+[node name="SM_Bld_Railing_Straight_026" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 3, 2.5)
+
+[node name="SM_Bld_Railing_Straight_027" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 3, -2.5)
+
+[node name="SM_Bld_Railing_Straight_029" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.5, 0, 0)
+
+[node name="SM_Bld_Railing_Straight_028" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 3, 0)
+
+[node name="SM_Bld_Railing_Straight_031" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 3, 0)
+
+[node name="SM_Bld_Railing_Straight_034" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 3, 0)
+
+[node name="SM_Bld_Railing_Straight_037" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -2.5, 3, 2.5)
+
+[node name="SM_Bld_Railing_Straight_024" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 12.5, 0, 7.5)
+
+[node name="SM_Bld_Railing_Straight_036" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 15, 0, 7.5)
+
+[node name="SM_Bld_Railing_Straight_038" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 17.5, 0, 7.5)
+
+[node name="SM_Bld_Railing_Straight_043" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 15, -2.9292, 7.38392)
+
+[node name="SM_Bld_Railing_Straight_045" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 17.4457, -2.929, 7.5)
+
+[node name="SM_Bld_Railing_Straight_046" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 17.4457, -2.929, 5)
+
+[node name="SM_Bld_Railing_Straight_047" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 17.4457, -2.929, 2.5)
+
+[node name="SM_Bld_Railing_Straight_048" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 17.4457, -2.929, 0)
+
+[node name="SM_Bld_Railing_Straight_049" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 17.4457, -2.929, -2.5)
+
+[node name="SM_Bld_Railing_Straight_050" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 17.4457, -2.929, -5)
+
+[node name="SM_Bld_Railing_Straight_051" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 14.9457, -2.929, -5)
+
+[node name="SM_Bld_Railing_Straight_052" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 12.4457, -2.929, -5)
+
+[node name="SM_Bld_Railing_Straight_053" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-1, 0, -2.62268e-07, 0, 1, 0, 2.62268e-07, 0, -1, 9.94567, -2.929, -5)
+
+[node name="SM_Bld_Railing_Straight_044" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 12.5, -2.9292, 7.38392)
+
+[node name="SM_Bld_Railing_Pillar_Straight_012" parent="static_mesh" instance=ExtResource("15_77hjl")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 12.5, 0, 5.05)
+
+[node name="SM_Bld_Railing_Pillar_Straight_014" parent="static_mesh" instance=ExtResource("15_77hjl")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.5, 3, 0.262187)
+
+[node name="SM_Bld_Railing_Pillar_Straight_015" parent="static_mesh" instance=ExtResource("15_77hjl")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.5, 3, 5.01219)
+
+[node name="SM_Bld_Railing_Pillar_Straight_016" parent="static_mesh" instance=ExtResource("15_77hjl")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.5, 3, 2.51219)
+
+[node name="SM_Bld_Railing_Straight_023" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10, 0, 2.5)
+
+[node name="SM_Bld_Railing_Pillar_Straight_013" parent="static_mesh" instance=ExtResource("15_77hjl")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10, 0, 5)
+
+[node name="SM_Bld_Railing_Rail_Straight_012" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.00298363, 2.17626)
+
+[node name="SM_Bld_Railing_Rail_Straight_013" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10, 0.00298363, 2.50096)
+
+[node name="SM_Bld_Railing_Pillar_Straight_018" parent="static_mesh" instance=ExtResource("15_77hjl")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.49803, 0, 0.000960112)
+
+[node name="SM_Bld_Railing_Rail_Straight_021" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.49803, 0.00298363, 0)
+
+[node name="SM_Bld_Railing_Rail_Straight_016" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10.3202, 3.00298, 2.50096)
+
+[node name="SM_Bld_Railing_Rail_Straight_019" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(1, 0, -1.78814e-07, 0, 1, 0, 1.78814e-07, 0, 1, 7.5702, 3.00298, 5.00096)
+
+[node name="SM_Bld_Railing_Rail_Straight_060" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-1, 0, 2.66237e-07, 0, 1, 0, -2.66237e-07, 0, -1, 7.5702, 2.99878, 0.263099)
+
+[node name="SM_Bld_Railing_Rail_Straight_061" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-1, 0, 2.66237e-07, 0, 1, 0, -2.66237e-07, 0, -1, 5.0702, 2.99878, 0.263099)
+
+[node name="SM_Bld_Railing_Rail_Straight_062" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-1, 0, 2.66237e-07, 0, 1, 0, -2.66237e-07, 0, -1, 2.5702, 2.99878, 0.263099)
+
+[node name="SM_Bld_Railing_Rail_Straight_063" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-1, 0, 2.66237e-07, 0, 1, 0, -2.66237e-07, 0, -1, 0.0702, 2.99878, 0.263099)
+
+[node name="SM_Bld_Railing_Rail_Straight_064" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-2.22525e-07, 0, -1, 0, 1, 0, 1, 0, -2.22525e-07, -2.1798, 2.99878, 0.263099)
+
+[node name="SM_Bld_Railing_Rail_Straight_065" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-2.22525e-07, 0, -1, 0, 1, 0, 1, 0, -2.22525e-07, -2.1798, 2.99878, 5.0131)
+
+[node name="SM_Bld_Railing_Rail_Straight_067" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(1.35103e-07, 0, 1, 0, 1, 0, -1, 0, 1.35103e-07, -5.32932, 3.00451, 7.2631)
+
+[node name="SM_Bld_Railing_Rail_Straight_068" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(1.35103e-07, 0, 1, 0, 1, 0, -1, 0, 1.35103e-07, -5.32932, 3.00451, 4.7631)
+
+[node name="SM_Bld_Railing_Rail_Straight_069" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(1.35103e-07, 0, 1, 0, 1, 0, -1, 0, 1.35103e-07, -5.32932, 3.00451, 2.2631)
+
+[node name="SM_Bld_Railing_Rail_Straight_070" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(1.35103e-07, 0, 1, 0, 1, 0, -1, 0, 1.35103e-07, -5.32932, 3.00451, 0.0130987)
+
+[node name="SM_Bld_Railing_Rail_Straight_071" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(1, 0, -1.78814e-07, 0, 1, 0, 1.78814e-07, 0, 1, -5.07932, 2.99968, -5.32661)
+
+[node name="SM_Bld_Railing_Rail_Straight_072" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(1, 0, -1.78814e-07, 0, 1, 0, 1.78814e-07, 0, 1, -2.57932, 2.99968, -5.32661)
+
+[node name="SM_Bld_Railing_Rail_Straight_066" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-1, 0, 2.66237e-07, 0, 1, 0, -2.66237e-07, 0, -1, -2.33646, 2.99327, 7.58295)
+
+[node name="SM_Bld_Railing_Rail_Straight_017" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10.3202, 3.00298, 0.000959158)
+
+[node name="SM_Bld_Railing_Rail_Straight_018" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10.3202, 3.00298, -4.99904)
+
+[node name="SM_Bld_Railing_Straight_030" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 3, 0)
+
+[node name="SM_Bld_Railing_Rail_Straight_022" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10.3202, 3.00298, -2.49904)
+
+[node name="SM_Bld_Railing_Rail_Straight_014" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 12.82, -0.00695056, 2.50096)
+
+[node name="SM_Bld_Railing_Straight_039" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.492, 0, 4.86731)
+
+[node name="SM_Bld_Railing_Pillar_Straight_017" parent="static_mesh" instance=ExtResource("15_77hjl")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.492, 0, -2.68269)
+
+[node name="SM_Bld_Railing_Rail_Straight_024" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 17.172, -0.00695056, 7.36635)
+
+[node name="SM_Bld_Railing_Straight_040" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.492, 0, 2.36731)
+
+[node name="SM_Bld_Railing_Rail_Straight_025" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 17.172, -0.00695056, 4.86635)
+
+[node name="SM_Bld_Railing_Straight_041" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.492, 0, -0.132693)
+
+[node name="SM_Bld_Railing_Rail_Straight_026" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 17.172, -0.00695056, 2.36635)
+
+[node name="SM_Bld_Railing_Straight_042" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.492, 0, -2.63269)
+
+[node name="SM_Bld_Railing_Rail_Straight_027" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 17.172, -0.00695056, -0.133654)
+
+[node name="SM_Bld_Railing_Straight_055" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 19.7521, 0, -2.49086)
+
+[node name="SM_Bld_Railing_Rail_Straight_040" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-2.18557e-07, 0, -1, 0, 1, 0, 1, 0, -2.18557e-07, 20.0721, -0.00695056, -4.98991)
+
+[node name="SM_Bld_Railing_Straight_056" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 19.7521, 0, 0.00913525)
+
+[node name="SM_Bld_Railing_Rail_Straight_041" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-2.18557e-07, 0, -1, 0, 1, 0, 1, 0, -2.18557e-07, 20.0721, -0.00695056, -2.4899)
+
+[node name="SM_Bld_Railing_Straight_057" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 19.7521, 0, 2.50914)
+
+[node name="SM_Bld_Railing_Rail_Straight_042" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-2.18557e-07, 0, -1, 0, 1, 0, 1, 0, -2.18557e-07, 20.0721, -0.00695056, 0.0100954)
+
+[node name="SM_Bld_Railing_Straight_058" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 19.7521, 0, 5.00914)
+
+[node name="SM_Bld_Railing_Rail_Straight_043" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-2.18557e-07, 0, -1, 0, 1, 0, 1, 0, -2.18557e-07, 20.0721, -0.00695056, 2.5101)
+
+[node name="SM_Bld_Railing_Straight_059" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 19.7521, 0, 7.50914)
+
+[node name="SM_Bld_Railing_Rail_Straight_044" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-2.18557e-07, 0, -1, 0, 1, 0, 1, 0, -2.18557e-07, 20.0721, -0.00695056, 5.0101)
+
+[node name="SM_Bld_Railing_Straight_060" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 19.7521, 0, 7.50914)
+
+[node name="SM_Bld_Railing_Rail_Straight_045" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-2.18557e-07, 0, -1, 0, 1, 0, 1, 0, -2.18557e-07, 20.0721, -0.00695056, 5.0101)
+
+[node name="SM_Bld_Railing_Straight_061" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 19.7521, 0, 10.0091)
+
+[node name="SM_Bld_Railing_Rail_Straight_046" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-2.18557e-07, 0, -1, 0, 1, 0, 1, 0, -2.18557e-07, 20.0721, -0.00695056, 7.5101)
+
+[node name="SM_Bld_Railing_Straight_062" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(1, 0, -1.74846e-07, 0, 1, 0, 1.74846e-07, 0, 1, 17.228, 0, 10.0135)
+
+[node name="SM_Bld_Railing_Rail_Straight_047" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-1, 0, 2.62268e-07, 0, 1, 0, -2.62268e-07, 0, -1, 19.727, -0.00695056, 10.3335)
+
+[node name="SM_Bld_Railing_Straight_063" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(1, 0, -1.74846e-07, 0, 1, 0, 1.74846e-07, 0, 1, 14.728, 0, 10.0135)
+
+[node name="SM_Bld_Railing_Rail_Straight_048" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-1, 0, 2.62268e-07, 0, 1, 0, -2.62268e-07, 0, -1, 17.227, -0.00695056, 10.3335)
+
+[node name="SM_Bld_Railing_Straight_064" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(1, 0, -1.74846e-07, 0, 1, 0, 1.74846e-07, 0, 1, 12.228, 0, 10.0135)
+
+[node name="SM_Bld_Railing_Rail_Straight_049" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-1, 0, 2.62268e-07, 0, 1, 0, -2.62268e-07, 0, -1, 14.727, -0.00695056, 10.3335)
+
+[node name="SM_Bld_Railing_Straight_065" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(1, 0, -1.74846e-07, 0, 1, 0, 1.74846e-07, 0, 1, 9.72797, 0, 10.0135)
+
+[node name="SM_Bld_Railing_Rail_Straight_050" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-1, 0, 2.62268e-07, 0, 1, 0, -2.62268e-07, 0, -1, 12.227, -0.00695056, 10.3335)
+
+[node name="SM_Bld_Railing_Straight_066" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(1, 0, -1.74846e-07, 0, 1, 0, 1.74846e-07, 0, 1, 7.22797, 0, 10.0135)
+
+[node name="SM_Bld_Railing_Rail_Straight_051" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-1, 0, 2.62268e-07, 0, 1, 0, -2.62268e-07, 0, -1, 9.72701, -0.00695056, 10.3335)
+
+[node name="SM_Bld_Railing_Straight_067" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(1, 0, -1.74846e-07, 0, 1, 0, 1.74846e-07, 0, 1, 4.72797, 0, 10.0135)
+
+[node name="SM_Bld_Railing_Rail_Straight_052" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-1, 0, 2.62268e-07, 0, 1, 0, -2.62268e-07, 0, -1, 7.22701, -0.00695056, 10.3335)
+
+[node name="SM_Bld_Railing_Straight_068" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(1, 0, -1.74846e-07, 0, 1, 0, 1.74846e-07, 0, 1, 2.22797, 0, 10.0135)
+
+[node name="SM_Bld_Railing_Rail_Straight_053" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-1, 0, 2.62268e-07, 0, 1, 0, -2.62268e-07, 0, -1, 4.72701, -0.00695056, 10.3335)
+
+[node name="SM_Bld_Railing_Straight_069" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(1, 0, -1.74846e-07, 0, 1, 0, 1.74846e-07, 0, 1, -0.272032, 0, 10.0135)
+
+[node name="SM_Bld_Railing_Rail_Straight_054" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-1, 0, 2.62268e-07, 0, 1, 0, -2.62268e-07, 0, -1, 2.22701, -0.00695056, 10.3335)
+
+[node name="SM_Bld_Railing_Straight_070" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(1, 0, -1.74846e-07, 0, 1, 0, 1.74846e-07, 0, 1, -2.52203, 0, 10.0135)
+
+[node name="SM_Bld_Railing_Rail_Straight_055" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-1, 0, 2.62268e-07, 0, 1, 0, -2.62268e-07, 0, -1, -0.022995, -0.00695056, 10.3335)
+
+[node name="SM_Bld_Railing_Straight_088" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(1, 0, -1.74846e-07, 0, 1, 0, 1.74846e-07, 0, 1, -5.02203, 0, 10.0135)
+
+[node name="SM_Bld_Railing_Rail_Straight_078" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(-1, 0, 2.62268e-07, 0, 1, 0, -2.62268e-07, 0, -1, -2.52299, -0.00695056, 10.3335)
+
+[node name="SM_Bld_Railing_Straight_071" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-2.18557e-07, 0, -1, 0, 1, 0, 1, 0, -2.18557e-07, -5.00651, 0, 7.42402)
+
+[node name="SM_Bld_Railing_Rail_Straight_056" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(3.36578e-07, 0, 1, 0, 1, 0, -1.1, 0, 3.0598e-07, -5.32651, -0.00695056, 10.1731)
+
+[node name="SM_Bld_Railing_Straight_072" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-2.18557e-07, 0, -1, 0, 1, 0, 1, 0, -2.18557e-07, -5.00651, 0, 4.92402)
+
+[node name="SM_Bld_Railing_Rail_Straight_057" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(3.0598e-07, 0, 1, 0, 1, 0, -1, 0, 3.0598e-07, -5.32651, -0.00695056, 7.42306)
+
+[node name="SM_Bld_Railing_Straight_073" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-2.18557e-07, 0, -1, 0, 1, 0, 1, 0, -2.18557e-07, -5.00651, 0, 2.42402)
+
+[node name="SM_Bld_Railing_Rail_Straight_058" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(3.0598e-07, 0, 1, 0, 1, 0, -1, 0, 3.0598e-07, -5.32651, -0.00695056, 4.92306)
+
+[node name="SM_Bld_Railing_Straight_074" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-2.18557e-07, 0, -1, 0, 1, 0, 1, 0, -2.18557e-07, -5.00651, 0, -0.0759783)
+
+[node name="SM_Bld_Railing_Rail_Straight_059" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(3.0598e-07, 0, 1, 0, 1, 0, -1, 0, 3.0598e-07, -5.32651, -0.00695056, 2.42306)
+
+[node name="SM_Bld_Railing_Straight_089" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-2.18557e-07, 0, -1, 0, 1, 0, 1, 0, -2.18557e-07, -5.00651, 0, -2.57598)
+
+[node name="SM_Bld_Railing_Rail_Straight_079" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(3.0598e-07, 0, 1, 0, 1, 0, -1, 0, 3.0598e-07, -5.32651, -0.00695056, -0.0769415)
+
+[node name="SM_Bld_Railing_Straight_090" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-2.18557e-07, 0, -1, 0, 1, 0, 1, 0, -2.18557e-07, -5.00651, 0, -5.07598)
+
+[node name="SM_Bld_Railing_Rail_Straight_080" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(3.0598e-07, 0, 1, 0, 1, 0, -1, 0, 3.0598e-07, -5.32651, -0.00695056, -2.57694)
+
+[node name="SM_Bld_Railing_Rail_Straight_081" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(0.999767, 0, -0.0215884, 0, 1, 0, 0.0215884, 0, 0.999767, -5.07651, -0.00695056, -5.32694)
+
+[node name="SM_Bld_Railing_Rail_Straight_082" parent="static_mesh" instance=ExtResource("17_mwyo0")]
+transform = Transform3D(1.12976, 0, -0.0321089, 0, 1, 0, 0.036294, 0, 0.999484, -2.57651, -0.00695056, -5.27126)
+
+[node name="SM_Bld_Railing_Straight_054" parent="static_mesh" instance=ExtResource("14_s76x2")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 19.8315, 0, -5.02505)
+
+[node name="SM_Bld_Base_Wall_012" parent="static_mesh" instance=ExtResource("8_tcjrq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, 0)
+
+[node name="SM_Bld_Base_Wall_017" parent="static_mesh" instance=ExtResource("8_tcjrq")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7.5, 0, 2.5)
+
+[node name="SM_Bld_Base_Wall_022" parent="static_mesh" instance=ExtResource("8_tcjrq")]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 10, -3, 5)
+
+[node name="SM_Bld_Base_Wall_024" parent="static_mesh" instance=ExtResource("8_tcjrq")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10.0244, -3, 2.5)
+
+[node name="SM_Bld_Base_Wall_025" parent="static_mesh" instance=ExtResource("8_tcjrq")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10.0244, -3, 5)
+
+[node name="SM_Bld_Base_Wall_026" parent="static_mesh" instance=ExtResource("8_tcjrq")]
+transform = Transform3D(1, 0, 7.10543e-15, 0, 1, 0, -7.10543e-15, 0, 1, 10.0244, -3, 7.5)
+
+[node name="SM_Bld_Base_Wall_023" parent="static_mesh" instance=ExtResource("8_tcjrq")]
+transform = Transform3D(-1, 0, 2.62268e-07, 0, 1, 0, -2.62268e-07, 0, -1, 12.5, -3, 2.5)
+
+[node name="SM_Bld_Base_Wall_018" parent="static_mesh" instance=ExtResource("8_tcjrq")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7.5, 0, 0)
+
+[node name="SM_Bld_Base_Wall_019" parent="static_mesh" instance=ExtResource("8_tcjrq")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7.5, -3, 2.5)
+
+[node name="SM_Bld_Base_Wall_020" parent="static_mesh" instance=ExtResource("8_tcjrq")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7.5, -3, 0)
+
+[node name="SM_Bld_Base_Wall_021" parent="static_mesh" instance=ExtResource("8_tcjrq")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7.5, -3, -2.5)
+
+[node name="SM_Bld_Base_Wall_032" parent="static_mesh" instance=ExtResource("8_tcjrq")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7.5, -3, -5)
+
+[node name="SM_Bld_Base_Wall_014" parent="static_mesh" instance=ExtResource("8_tcjrq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, 0)
+
+[node name="SM_Bld_Base_Wall_027" parent="static_mesh" instance=ExtResource("8_tcjrq")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, -0.0570557)
+
+[node name="SM_Bld_Base_Wall_015" parent="static_mesh" instance=ExtResource("8_tcjrq")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, -2.5)
+
+[node name="SM_Bld_Base_Wall_016" parent="static_mesh" instance=ExtResource("8_tcjrq")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.5, 0, 0)
+
+[node name="SM_Bld_Base_Wall_029" parent="static_mesh" instance=ExtResource("8_tcjrq")]
+transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, 2.5, 0, -5)
+
+[node name="SM_Bld_Base_Wall_030" parent="static_mesh" instance=ExtResource("8_tcjrq")]
+transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, 5, 0, -5)
+
+[node name="SM_Bld_Base_Wall_031" parent="static_mesh" instance=ExtResource("8_tcjrq")]
+transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, 0, 0, -5)
+
+[node name="SM_Bld_Base_Wall_028" parent="static_mesh" instance=ExtResource("8_tcjrq")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, -5)
+
+[node name="SM_Bld_Base_Wall_013" parent="static_mesh" instance=ExtResource("8_tcjrq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)
+
+[node name="SM_Ground" type="Node3D" parent="static_mesh"]
+
+[node name="SM_Bld_Base_Floor_Combined_012" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+
+[node name="SM_Bld_Base_Floor_Combined_020" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.5)
+
+[node name="SM_Bld_Base_Floor_Combined_021" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
+
+[node name="SM_Bld_Base_Floor_Combined_037" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -2.5)
+
+[node name="SM_Bld_Base_Floor_Combined_038" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, -5)
+
+[node name="SM_Bld_Base_Floor_Combined_039" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -2.5)
+
+[node name="SM_Bld_Base_Floor_Combined_040" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -5)
+
+[node name="SM_Bld_Base_Floor_Combined_014" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.5)
+
+[node name="SM_Bld_Base_Floor_Combined_018" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, 0)
+
+[node name="SM_Bld_Base_Floor_Combined_019" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, 2.5)
+
+[node name="SM_Bld_Base_Floor_Combined_015" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, 2.5)
+
+[node name="SM_Bld_Base_Floor_Combined_017" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 2.5)
+
+[node name="SM_Bld_Base_Floor_Combined_016" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5)
+
+[node name="SM_Bld_Base_Floor_Combined_022" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, 5)
+
+[node name="SM_Bld_Base_Floor_Combined_023" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, 5)
+
+[node name="SM_Bld_Base_Floor_Combined_024" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 5)
+
+[node name="SM_Bld_Base_Floor_Combined_025" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 0, 5)
+
+[node name="SM_Bld_Base_Floor_Combined_058" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7.5)
+
+[node name="SM_Bld_Base_Floor_Combined_059" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, 7.5)
+
+[node name="SM_Bld_Base_Floor_Combined_063" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 0)
+
+[node name="SM_Bld_Base_Floor_Combined_067" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, -2.5)
+
+[node name="SM_Bld_Base_Floor_Combined_068" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -2.5)
+
+[node name="SM_Bld_Base_Floor_Combined_069" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, -5)
+
+[node name="SM_Bld_Base_Floor_Combined_070" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -5)
+
+[node name="SM_Bld_Base_Floor_Combined_064" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 2.5)
+
+[node name="SM_Bld_Base_Floor_Combined_065" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 5)
+
+[node name="SM_Bld_Base_Floor_Combined_066" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 7.5)
+
+[node name="SM_Bld_Base_Floor_Combined_060" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0, 7.5)
+
+[node name="SM_Bld_Base_Floor_Combined_061" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 7.5)
+
+[node name="SM_Bld_Base_Floor_Combined_062" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 0, 7.5)
+
+[node name="SM_Bld_Base_Floor_Combined_026" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 5)
+
+[node name="SM_Bld_Base_Floor_Combined_041" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 7.5)
+
+[node name="SM_Bld_Base_Floor_Combined_042" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.5, 0, 7.5)
+
+[node name="SM_Bld_Base_Floor_Combined_051" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 7.5)
+
+[node name="SM_Bld_Base_Floor_Combined_052" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.5, 0, 7.5)
+
+[node name="SM_Bld_Base_Floor_Combined_053" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.5, 0, 5)
+
+[node name="SM_Bld_Base_Floor_Combined_054" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.5, 0, 2.5)
+
+[node name="SM_Bld_Base_Floor_Combined_055" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.5, 0, 0)
+
+[node name="SM_Bld_Base_Floor_Combined_056" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.5, 0, -2.5)
+
+[node name="SM_Bld_Base_Floor_Combined_057" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.5, 0, -5)
+
+[node name="SM_Bld_Base_Floor_Combined_032" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 2.5)
+
+[node name="SM_Bld_Base_Floor_Combined_027" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 12.5, -3, 0)
+
+[node name="SM_Bld_Base_Floor_Combined_028" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 12.5, -3, -2.5)
+
+[node name="SM_Bld_Base_Floor_Combined_030" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 15, -3, 0)
+
+[node name="SM_Bld_Base_Floor_Combined_033" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 15, -3, 2.5)
+
+[node name="SM_Bld_Base_Floor_Combined_034" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 15, -3, 5)
+
+[node name="SM_Bld_Base_Floor_Combined_035" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 12.5, -3, 2.5)
+
+[node name="SM_Bld_Base_Floor_Combined_036" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 12.5, -3, 5)
+
+[node name="SM_Bld_Base_Floor_Combined_031" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 15, -3, -2.5)
+
+[node name="SM_Bld_Base_Floor_Combined_043" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 15, -3, -5)
+
+[node name="SM_Bld_Base_Floor_Combined_046" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 17.5, -3, 0)
+
+[node name="SM_Bld_Base_Floor_Combined_047" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 17.5, -3, 2.5)
+
+[node name="SM_Bld_Base_Floor_Combined_048" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 17.5, -3, 5)
+
+[node name="SM_Bld_Base_Floor_Combined_049" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 17.5, -3, -2.5)
+
+[node name="SM_Bld_Base_Floor_Combined_050" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 17.5, -3, -5)
+
+[node name="SM_Bld_Base_Floor_Combined_044" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 12.5, -3, -5)
+
+[node name="SM_Bld_Base_Floor_Combined_045" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 10, -3, -5)
+
+[node name="SM_Bld_Base_Floor_Combined_029" parent="static_mesh/SM_Ground" instance=ExtResource("1_onqr8")]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 10, -3, -2.5)
+
+[node name="SM_Ground_2" type="Node3D" parent="static_mesh"]
+
+[node name="SM_Bld_Base_Floor_Combined_022" parent="static_mesh/SM_Ground_2" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 3, 0)
+
+[node name="SM_Bld_Base_Floor_Combined_028" parent="static_mesh/SM_Ground_2" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 3, 2.5)
+
+[node name="SM_Bld_Base_Floor_Combined_029" parent="static_mesh/SM_Ground_2" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 3, 2.5)
+
+[node name="SM_Bld_Base_Floor_Combined_032" parent="static_mesh/SM_Ground_2" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 3, 5)
+
+[node name="SM_Bld_Base_Floor_Combined_030" parent="static_mesh/SM_Ground_2" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 3, 0)
+
+[node name="SM_Bld_Base_Floor_Combined_031" parent="static_mesh/SM_Ground_2" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 3, -2.5)
+
+[node name="SM_Bld_Base_Floor_Combined_023" parent="static_mesh/SM_Ground_2" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 3, -2.5)
+
+[node name="SM_Bld_Base_Floor_Combined_024" parent="static_mesh/SM_Ground_2" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 3, -2.5)
+
+[node name="SM_Bld_Base_Floor_Combined_025" parent="static_mesh/SM_Ground_2" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 3, -2.5)
+
+[node name="SM_Bld_Base_Floor_Combined_034" parent="static_mesh/SM_Ground_2" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 3, -5)
+
+[node name="SM_Bld_Base_Floor_Combined_036" parent="static_mesh/SM_Ground_2" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 3, -5)
+
+[node name="SM_Bld_Base_Floor_Combined_035" parent="static_mesh/SM_Ground_2" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 3, -5)
+
+[node name="SM_Bld_Base_Floor_Combined_026" parent="static_mesh/SM_Ground_2" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, -2.5)
+
+[node name="SM_Bld_Base_Floor_Combined_033" parent="static_mesh/SM_Ground_2" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, -5)
+
+[node name="SM_Bld_Base_Floor_Combined_027" parent="static_mesh/SM_Ground_2" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 3, -2.5)
+
+[node name="SM_Bld_Base_Floor_Combined_037" parent="static_mesh/SM_Ground_2" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 3, -5)
+
+[node name="SM_Bld_Base_Floor_Combined_038" parent="static_mesh/SM_Ground_2" instance=ExtResource("1_onqr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 3, -5)
+
+[node name="SM_Prop_TrashBin_012" parent="static_mesh/SM_Ground_2" instance=ExtResource("3_85lt4")]
+transform = Transform3D(-2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, 1.90983, 0.00809067, -1.48877)
+
+[node name="SM_Prop_TrashBin_013" parent="static_mesh/SM_Ground_2" instance=ExtResource("3_85lt4")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 11.2396, -2.90925, 3.0791)
+
+[node name="SM_Bld_Railing_Straight_014" parent="static_mesh" instance=ExtResource("8_b5spy")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.5, 0, -4.99165)
+
+[node name="SM_Bld_Railing_Straight_015" parent="static_mesh" instance=ExtResource("8_b5spy")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.5, 0, -2.5)
+
+[node name="SM_Bld_Railing_Pillar_Straight_019" parent="static_mesh" instance=ExtResource("15_77hjl")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.5, 0, -2.48781)
+
+[node name="SM_Bld_Railing_Pillar_Straight_020" parent="static_mesh" instance=ExtResource("15_77hjl")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.5, 0, -4.98781)

@@ -38,6 +38,16 @@ _subresources={
 "use_external/enabled": true,
 "use_external/path": "uid://bqv2dtk3i5ekf"
 }
+},
+"nodes": {
+"PATH:SM_Prop_Pill_Dispenser_01": {
+"physics/shape_type": 1
+},
+"PATH:SM_Prop_Pill_Dispenser_01/SM_Prop_Pill_Dispenser_01_Handle_01": {
+"physics/body_type": 2,
+"physics/layer": 8,
+"physics/shape_type": 3
+}
 }
 }
 gltf/naming_version=1

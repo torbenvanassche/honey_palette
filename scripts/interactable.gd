@@ -8,6 +8,8 @@ signal clicked(button_index: int);
 @export var animation_name: String = &"trigger";
 @export var once: bool;
 
+@export var script_node: Node;
+
 var last_button_index: int = 0;
 
 func _ready() -> void:
@@ -19,7 +21,7 @@ func _ready() -> void:
 	
 func _on_click(btn_index: int) -> void:
 	last_button_index = btn_index;
-	if animation_player:
+	if animation_player && animation_player.has_animation(animation_name):
 		animation_player.play(animation_name)
 	else:
 		_execute("", last_button_index);
@@ -27,6 +29,9 @@ func _on_click(btn_index: int) -> void:
 func _execute(animation_name: String = "", btn_index: int = 0) -> void:
 	if btn_index == 0:
 		primary.emit();
+	
+	if script_node && script_node.has_method("execute"):
+		script_node.execute(btn_index);
 		
 	if once:
 		for c in collider.get_children(false):
