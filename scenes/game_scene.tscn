@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://4y48an0tl5uq"]
+[gd_scene load_steps=33 format=3 uid="uid://4y48an0tl5uq"]
 
 [ext_resource type="PackedScene" uid="uid://b53x2faio571n" path="res://models/base/SM_Bld_Base_Floor_Combined_01.glb" id="1_onqr8"]
 [ext_resource type="PackedScene" uid="uid://da3taqvterwy4" path="res://models/prefab/container.tscn" id="3_85lt4"]
@@ -28,6 +28,10 @@
 [ext_resource type="PackedScene" uid="uid://b4xdtphing75j" path="res://models/prefab/door.tscn" id="25_xgstd"]
 [ext_resource type="PackedScene" uid="uid://babsc2pya2ijk" path="res://models/base/SM_Bld_Base_Pillar_01.glb" id="26_ttvoq"]
 [ext_resource type="PackedScene" uid="uid://c5vuv2srysibv" path="res://models/prefab/sm_dispenser.tscn" id="27_rw4oa"]
+[ext_resource type="PackedScene" uid="uid://cyun7wfpqov2n" path="res://models/pipes/SM_Bld_Pipe_Small_Bend_01.glb" id="30_bpk3j"]
+[ext_resource type="PackedScene" uid="uid://dm2g8t3g12qfo" path="res://models/prefab/color_recepticle.tscn" id="31_5dk4p"]
+[ext_resource type="PackedScene" uid="uid://djh8rcnv1xv68" path="res://models/pipes/SM_Prop_Pipe_Small_Adapter_01.glb" id="31_ngbhp"]
+[ext_resource type="PackedScene" uid="uid://ccpk7jgmebsj0" path="res://models/prefab/color_container.tscn" id="32_bpk3j"]
 
 [node name="Node3D" type="Node3D"]
 
@@ -35,12 +39,6 @@
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 12.5, -3, 7.5)
 broken_door_material = ExtResource("15_ro0ie")
 fixed_door_material = ExtResource("16_103ce")
-
-[node name="Node3D" parent="." instance=ExtResource("7_kk2rg")]
-transform = Transform3D(9.60591, 0, 0, 0, 1, 0, 0, 0, 1.82127, 2.44411, 2.92634, 3.80595)
-
-[node name="Node3D2" parent="." instance=ExtResource("7_kk2rg")]
-transform = Transform3D(9.99015, 0, 0, 0, 1, 0, 0, 0, 1.82127, 12.4441, -0.0736599, -3.69405)
 
 [node name="laser puzzle" parent="." node_paths=PackedStringArray("beam_origin", "puzzle_start", "mirrors") instance=ExtResource("20_ro0ie")]
 beam_origin = NodePath("laser_origin")
@@ -77,7 +75,7 @@ transform = Transform3D(2, 0, 0, 0, -8.74228e-08, 2, 0, -2, -8.74228e-08, 4.0727
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.5, 0, 0)
 
 [node name="SM_Prop_Pill_Dispenser_013" parent="." instance=ExtResource("27_rw4oa")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7.06931, 0.00809082, 4.25887)
+transform = Transform3D(1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, -1.16086, 0.00809106, 0.463237)
 
 [node name="static_mesh" type="Node3D" parent="."]
 
@@ -940,3 +938,30 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.5, 0
 
 [node name="SM_Bld_Railing_Pillar_Straight_020" parent="static_mesh" instance=ExtResource("15_77hjl")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.5, 0, -4.98781)
+
+[node name="SM_Bld_Pipe_Small_Bend_012" parent="static_mesh" instance=ExtResource("30_bpk3j")]
+transform = Transform3D(-1.09278e-08, -0.25, 0, 0.25, -1.09278e-08, 0, 0, 0, 0.25, -1.16039, 1.7619, 0.465305)
+
+[node name="SM_Prop_Pipe_Small_Adapter_012" parent="static_mesh" instance=ExtResource("31_ngbhp")]
+transform = Transform3D(0, 0, -0.2, 0, 0.2, 0, 0.2, 0, 0, -1.15683, 2.13279, 0.0852184)
+
+[node name="SM_Prop_Pipe_Small_Adapter_013" parent="static_mesh" instance=ExtResource("31_ngbhp")]
+transform = Transform3D(-7.70049e-09, 0, 0.176167, 0, 0.176167, 0, -0.176167, 0, -7.70049e-09, -1.19716, 2.11348, -0.149721)
+
+[node name="SM_Prop_Pipe_Small_Adapter_014" parent="static_mesh" instance=ExtResource("31_ngbhp")]
+transform = Transform3D(-8.27528e-09, -0.109302, 0.189316, -4.77774e-09, 0.189316, 0.109302, -0.218604, 0, -9.55548e-09, -1.04714, 2.11348, -0.129909)
+
+[node name="Node3D" parent="." instance=ExtResource("7_kk2rg")]
+transform = Transform3D(9.60591, 0, 0, 0, 1, 0, 0, 0, 1.82127, 2.44411, 2.92634, 3.80595)
+
+[node name="Node3D2" parent="." instance=ExtResource("7_kk2rg")]
+transform = Transform3D(9.99015, 0, 0, 0, 1, 0, 0, 0, 1.82127, 12.4441, -0.0736599, -3.69405)
+
+[node name="SM_Prop_Greebles_11_Split_Red" parent="." instance=ExtResource("31_5dk4p")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -1.29502, 1.61836, -0.0138582)
+
+[node name="SM_Prop_Greebles_24" parent="." instance=ExtResource("32_bpk3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.409892, 0.424371, -0.452207)
+
+[node name="SM_Prop_Greebles_25" parent="." instance=ExtResource("32_bpk3j")]
+transform = Transform3D(0.788097, 0.615551, 2.69066e-08, 0, -4.37114e-08, 1, 0.615551, -0.788097, -3.44488e-08, -0.535963, 0.116364, -0.746724)

@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://e2b5pwepi3rl"
-path="res://.godot/imported/SM_Prop_Greebles_17.glb-029f68211fc287625d8a4c6ff0a1672b.scn"
+uid="uid://dwvr2e0tyfekl"
+path="res://.godot/imported/SM_Prop_Greebles_11_Split_Red.glb-b9f325290b03923a6401a85fe7624b69.scn"
 
 [deps]
 
-source_file="res://models/greebles/SM_Prop_Greebles_17.glb"
-dest_files=["res://.godot/imported/SM_Prop_Greebles_17.glb-029f68211fc287625d8a4c6ff0a1672b.scn"]
+source_file="res://models/greebles/SM_Prop_Greebles_11_Split_Red.glb"
+dest_files=["res://.godot/imported/SM_Prop_Greebles_11_Split_Red.glb-b9f325290b03923a6401a85fe7624b69.scn"]
 
 [params]
 
@@ -34,7 +34,7 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"placeholder.026": {
+"placeholder.001": {
 "use_external/enabled": true,
 "use_external/path": "uid://dg1ml8xindj24"
 }

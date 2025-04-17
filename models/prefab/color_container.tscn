@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://ccpk7jgmebsj0"]
+
+[ext_resource type="PackedScene" uid="uid://dqcav7nmfiww2" path="res://models/greebles/SM_Prop_Greebles_24.glb" id="1_0qf1o"]
+[ext_resource type="Script" uid="uid://q4legxebdlbq" path="res://scripts/interactable.gd" id="2_fuhsy"]
+[ext_resource type="Script" uid="uid://bg4wuim48dq83" path="res://scripts/interaction_handlers/color_container.gd" id="3_4yuu7"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0qf1o"]
+size = Vector3(0.373535, 0.880371, 0.353088)
+
+[node name="SM_Prop_Greebles_24" node_paths=PackedStringArray("collider") instance=ExtResource("1_0qf1o")]
+script = ExtResource("2_fuhsy")
+collider = NodePath("Area3D")
+
+[node name="Area3D" type="Area3D" parent="." index="1"]
+collision_layer = 8
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0065918, 0.0134277, 0.00326538)
+shape = SubResource("BoxShape3D_0qf1o")
+
+[node name="script_node" type="Node" parent="." index="2"]
+script = ExtResource("3_4yuu7")

@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://dm2g8t3g12qfo"]
+
+[ext_resource type="PackedScene" uid="uid://dwvr2e0tyfekl" path="res://models/greebles/SM_Prop_Greebles_11_Split_Red.glb" id="1_ditro"]
+[ext_resource type="Script" uid="uid://q4legxebdlbq" path="res://scripts/interactable.gd" id="2_4x8sp"]
+[ext_resource type="Script" uid="uid://dhvxr8ntumh6t" path="res://scripts/interaction_handlers/color_recepticle.gd" id="3_4x8sp"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_istv8"]
+size = Vector3(100, 40.9145, 97.1486)
+
+[node name="SM_Prop_Greebles_11_Split_Red" node_paths=PackedStringArray("collider") instance=ExtResource("1_ditro")]
+script = ExtResource("2_4x8sp")
+collider = NodePath("SM_Prop_Greebles_11/Area3D")
+
+[node name="Area3D" type="Area3D" parent="SM_Prop_Greebles_11" index="0"]
+collision_layer = 8
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Prop_Greebles_11/Area3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 29.5427, 8.86697)
+shape = SubResource("BoxShape3D_istv8")
+
+[node name="script_node" type="Node" parent="." index="2" node_paths=PackedStringArray("phial")]
+script = ExtResource("3_4x8sp")
+phial = NodePath("../SM_Prop_Greebles_11_001")

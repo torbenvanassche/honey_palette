@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://e2b5pwepi3rl"
-path="res://.godot/imported/SM_Prop_Greebles_17.glb-029f68211fc287625d8a4c6ff0a1672b.scn"
+uid="uid://drn80ilwkx0i5"
+path="res://.godot/imported/SM_Prop_Cardboard_Box_02.glb-fe61cd53bf7127bab2c7ee66cda11366.scn"
 
 [deps]
 
-source_file="res://models/greebles/SM_Prop_Greebles_17.glb"
-dest_files=["res://.godot/imported/SM_Prop_Greebles_17.glb-029f68211fc287625d8a4c6ff0a1672b.scn"]
+source_file="res://models/cardboard/SM_Prop_Cardboard_Box_02.glb"
+dest_files=["res://.godot/imported/SM_Prop_Cardboard_Box_02.glb-fe61cd53bf7127bab2c7ee66cda11366.scn"]
 
 [params]
 
@@ -36,7 +36,7 @@ _subresources={
 "materials": {
 "placeholder.026": {
 "use_external/enabled": true,
-"use_external/path": "uid://dg1ml8xindj24"
+"use_external/path": "uid://dllnvi77mnunf"
 }
 }
 }

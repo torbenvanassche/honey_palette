@@ -1,0 +1,15 @@
+[gd_resource type="ShaderMaterial" load_steps=5 format=3 uid="uid://b8bbpxr8aigjd"]
+
+[ext_resource type="Shader" uid="uid://clgt0a45gbdju" path="res://shaders/color_filter/color_filter.tres" id="1_qclxt"]
+[ext_resource type="Texture2D" uid="uid://dxvumchsgt3i8" path="res://textures/color/PolygonCyberCity_Texture_03_A.png" id="2_qclxt"]
+[ext_resource type="Texture2D" uid="uid://duqf4tmf6hqgx" path="res://textures/emission/PolygonCyberCity_03_A_Emissive.png" id="3_mtxfp"]
+[ext_resource type="Texture2D" uid="uid://xtdabjfrctsb" path="res://textures/normal/PolygonCyberCity_Texture_A_01_Normal.png" id="4_ygmmb"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_qclxt")
+shader_parameter/albedo_texture = ExtResource("2_qclxt")
+shader_parameter/emission_texture = ExtResource("3_mtxfp")
+shader_parameter/normal_texture = ExtResource("4_ygmmb")
+shader_parameter/tint_as_emission = false
+shader_parameter/use_emission = false
