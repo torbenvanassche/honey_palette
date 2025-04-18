@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=5 format=3 uid="uid://bqv2dtk3i5ekf"]
 
-[ext_resource type="Shader" uid="uid://clgt0a45gbdju" path="res://shaders/color_filter/color_filter.tres" id="1_b2fft"]
+[ext_resource type="Shader" uid="uid://clgt0a45gbdju" path="res://shaders/color_filter.tres" id="1_b2fft"]
 [ext_resource type="Texture2D" uid="uid://erwh068ndwlt" path="res://textures/color/PolygonCyberCity_Texture_01_A_Alt.png" id="2_b2fft"]
 [ext_resource type="Texture2D" uid="uid://c50ybxlknkcv3" path="res://textures/emission/PolygonCyberCity_01_A_Emissive_Alt.png" id="3_ierxc"]
 [ext_resource type="Texture2D" uid="uid://xtdabjfrctsb" path="res://textures/normal/PolygonCyberCity_Texture_A_01_Normal.png" id="4_dcbqf"]

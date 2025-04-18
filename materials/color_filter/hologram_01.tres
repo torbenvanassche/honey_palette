@@ -1,9 +1,9 @@
 [gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://c7p1d1sc1jmmw"]
 
-[ext_resource type="Shader" uid="uid://clgt0a45gbdju" path="res://shaders/color_filter/color_filter.tres" id="1_0qht7"]
+[ext_resource type="Shader" uid="uid://clgt0a45gbdju" path="res://shaders/color_filter.tres" id="1_gb84s"]
 
 [resource]
 render_priority = 1
-shader = ExtResource("1_0qht7")
+shader = ExtResource("1_gb84s")
 shader_parameter/tint_as_emission = true
 shader_parameter/use_emission = false

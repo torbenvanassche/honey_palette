@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://d3gsk1wrucrch" path="res://models/items/SM_Prop_Pill_Bottle_Neutral.glb" id="1_nky3f"]
 [ext_resource type="Script" uid="uid://q4legxebdlbq" path="res://scripts/interactable.gd" id="2_v63np"]
-[ext_resource type="Script" uid="uid://ltfju0p8upjr" path="res://scripts/interaction_handlers/pill_bottle_collectible.gd" id="3_xf6gh"]
+[ext_resource type="Script" uid="uid://bqb3s36a68yxu" path="res://models/prefab/prop_phial_red.gd" id="3_v63np"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_oisjn"]
 size = Vector3(0.225983, 0.0654907, 0.0610352)
@@ -21,4 +21,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00672913, 0.0335999, 0.002
 shape = SubResource("BoxShape3D_oisjn")
 
 [node name="script_node" type="Node" parent="." index="2"]
-script = ExtResource("3_xf6gh")
+script = ExtResource("3_v63np")

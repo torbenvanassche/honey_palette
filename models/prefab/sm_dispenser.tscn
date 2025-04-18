@@ -1,7 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://c5vuv2srysibv"]
+[gd_scene load_steps=16 format=3 uid="uid://c5vuv2srysibv"]
 
 [ext_resource type="PackedScene" uid="uid://bl1ukpsk2lcg6" path="res://models/items/SM_Prop_Pill_Dispenser_01.glb" id="1_mqlv6"]
 [ext_resource type="Script" uid="uid://q4legxebdlbq" path="res://scripts/interactable.gd" id="2_tbec3"]
+[ext_resource type="Script" uid="uid://7bkwc3vnywby" path="res://scripts/interaction_handlers/phial_dispenser.gd" id="3_tbec3"]
+[ext_resource type="PackedScene" uid="uid://cyun7wfpqov2n" path="res://models/pipes/SM_Bld_Pipe_Small_Bend_01.glb" id="4_io817"]
+[ext_resource type="PackedScene" uid="uid://djh8rcnv1xv68" path="res://models/pipes/SM_Prop_Pipe_Small_Adapter_01.glb" id="5_b0ckj"]
+[ext_resource type="ArrayMesh" uid="uid://o36tw5wja6ir" path="res://exporoted meshes/red_bottle.res" id="6_v85sk"]
+[ext_resource type="Script" uid="uid://bqb3s36a68yxu" path="res://models/prefab/prop_phial_red.gd" id="7_1srq0"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_u3cnu"]
 size = Vector3(13.25, 28.9328, 14.872)
@@ -34,7 +39,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.5),
 "transitions": PackedFloat32Array(2, 0.5),
 "update": 0,
-"values": [Vector3(0, 0, 0), Vector3(0, -6.28319, 0)]
+"values": [Vector3(0, 0, 0), Vector3(0, -2.0944, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_u3cnu"]
@@ -43,11 +48,53 @@ _data = {
 &"trigger": SubResource("Animation_mqlv6")
 }
 
-[node name="SM_Prop_Pill_Dispenser_012" node_paths=PackedStringArray("animation_player", "collider") instance=ExtResource("1_mqlv6")]
+[sub_resource type="BoxShape3D" id="BoxShape3D_oisjn"]
+size = Vector3(0.225983, 0.0654907, 0.0610352)
+
+[sub_resource type="Animation" id="Animation_v85sk"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../SM_Prop_Pill_Bottle_Neutral/SM_Prop_Pill_Bottle_03:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-0.0572753, -2.38419e-09, -8.52651e-16)]
+}
+
+[sub_resource type="Animation" id="Animation_k1emd"]
+resource_name = "trigger"
+length = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../SM_Prop_Pill_Bottle_Neutral/SM_Prop_Pill_Bottle_03:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-0.0572753, -2.38419e-09, -8.52651e-16), Vector3(0.092089, 2.38419e-09, 1.42109e-15)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1srq0"]
+_data = {
+&"RESET": SubResource("Animation_v85sk"),
+&"trigger": SubResource("Animation_k1emd")
+}
+
+[node name="SM_Prop_Pill_Dispenser_012" node_paths=PackedStringArray("animation_player", "collider", "follow_up_item", "script_node") instance=ExtResource("1_mqlv6")]
 script = ExtResource("2_tbec3")
 animation_player = NodePath("AnimationPlayer")
 collider = NodePath("SM_Prop_Pill_Dispenser_01/SM_Prop_Pill_Dispenser_01_Handle_01/Area3D")
+follow_up_item = NodePath("SM_Prop_Pill_Bottle_Neutral")
 once = true
+script_node = NodePath("script_node")
 
 [node name="SM_Prop_Pill_Dispenser_01_Handle_01" parent="SM_Prop_Pill_Dispenser_01" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.91125, 12.7505, -107.751)
@@ -64,4 +111,43 @@ debug_color = Color(1, 0.6, 0.701961, 0.419608)
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." index="1"]
 libraries = {
 &"": SubResource("AnimationLibrary_u3cnu")
+}
+
+[node name="script_node" type="Node" parent="." index="2" node_paths=PackedStringArray("enable_lights")]
+script = ExtResource("3_tbec3")
+enable_lights = [NodePath("../SM_Bld_Pipe_Small_Bend_012"), NodePath("../SM_Bld_Pipe_Small_Bend_012/SM_Prop_Pipe_Small_Adapter_012")]
+
+[node name="SM_Bld_Pipe_Small_Bend_012" parent="." index="3" instance=ExtResource("4_io817")]
+transform = Transform3D(-1.09278e-08, -0.25, 0, 0.25, -1.09278e-08, 0, 0, 0, 0.25, 0, 1.762, 0)
+
+[node name="SM_Prop_Pipe_Small_Adapter_012" parent="SM_Bld_Pipe_Small_Bend_012" index="1" instance=ExtResource("5_b0ckj")]
+transform = Transform3D(0, 0.8, 3.4969e-08, 0, -3.4969e-08, 0.8, 0.8, 0, 0, 1.48356, -0.0142403, -1.52035)
+
+[node name="SM_Prop_Pill_Bottle_Neutral" type="Node3D" parent="." index="4" node_paths=PackedStringArray("animation_player", "collider", "script_node")]
+transform = Transform3D(1.13566e-07, 6.55671e-08, -1, -0.5, 0.866025, 0, 0.866025, 0.5, 1.31134e-07, 0.0767592, 1.04226, 0.0472844)
+script = ExtResource("2_tbec3")
+animation_player = NodePath("AnimationPlayer")
+collider = NodePath("Area3D")
+once = true
+script_node = NodePath("script_node")
+
+[node name="SM_Prop_Pill_Bottle_03" type="MeshInstance3D" parent="SM_Prop_Pill_Bottle_Neutral" index="0"]
+transform = Transform3D(0.01, 0, 0, 0, -3.57628e-09, -0.01, 0, 0.01, -3.57628e-09, -0.0572753, -2.38419e-09, -8.52651e-16)
+mesh = ExtResource("6_v85sk")
+skeleton = NodePath("")
+
+[node name="Area3D" type="Area3D" parent="SM_Prop_Pill_Bottle_Neutral" index="1"]
+collision_layer = 8
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_Prop_Pill_Bottle_Neutral/Area3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00672913, 0.0335999, 0.00219727)
+shape = SubResource("BoxShape3D_oisjn")
+
+[node name="script_node" type="Node" parent="SM_Prop_Pill_Bottle_Neutral" index="2"]
+script = ExtResource("7_1srq0")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="SM_Prop_Pill_Bottle_Neutral" index="3"]
+root_node = NodePath("../../SM_Bld_Pipe_Small_Bend_012")
+libraries = {
+&"": SubResource("AnimationLibrary_1srq0")
 }

@@ -7,9 +7,11 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_0qf1o"]
 size = Vector3(0.373535, 0.880371, 0.353088)
 
-[node name="SM_Prop_Greebles_24" node_paths=PackedStringArray("collider") instance=ExtResource("1_0qf1o")]
+[node name="SM_Prop_Greebles_24" node_paths=PackedStringArray("collider", "script_node") instance=ExtResource("1_0qf1o")]
 script = ExtResource("2_fuhsy")
+can_interact = true
 collider = NodePath("Area3D")
+script_node = NodePath("script_node")
 
 [node name="Area3D" type="Area3D" parent="." index="1"]
 collision_layer = 8

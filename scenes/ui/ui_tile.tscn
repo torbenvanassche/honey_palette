@@ -1,0 +1,89 @@
+[gd_scene load_steps=9 format=3 uid="uid://cdja14lggh1se"]
+
+[ext_resource type="Texture2D" uid="uid://c31sdoa16k5u0" path="res://textures/ui/SPR_HUD_SciFi_Frame_B.png" id="1_dnv5a"]
+[ext_resource type="Texture2D" uid="uid://flkt0a7l7gfo" path="res://textures/ui/ICON_SM_Prop_Vendor_Product_03_SciFiWorlds.png" id="2_1l8ld"]
+[ext_resource type="Shader" uid="uid://kb0u3qagw03" path="res://shaders/recolor_texture.gdshader" id="2_2uc8x"]
+[ext_resource type="Script" uid="uid://bedueah4v1ho7" path="res://scripts/inventory_slot.gd" id="2_8ri50"]
+[ext_resource type="Texture2D" uid="uid://cis5g884arn02" path="res://textures/ui/SPR_HUD_SciFi_Box_Octagon.png" id="2_okxwt"]
+[ext_resource type="Texture2D" uid="uid://cais1ojik62n0" path="res://textures/ui/ICON_SM_Prop_Vendor_Product_03_SciFiWorlds_mask.png" id="4_okxwt"]
+[ext_resource type="Texture2D" uid="uid://b88tve2huadfj" path="res://textures/ui/SPR_HUD_SciFi_Box_A.png" id="7_dichm"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8ri50"]
+resource_local_to_scene = true
+shader = ExtResource("2_2uc8x")
+shader_parameter/base_texture = ExtResource("2_1l8ld")
+shader_parameter/mask_texture = ExtResource("4_okxwt")
+shader_parameter/tint_color = Color(1, 1, 1, 1)
+shader_parameter/base_color_mix = 0.0
+
+[node name="Border" type="TextureRect"]
+self_modulate = Color(0.601223, 0.601223, 0.601223, 1)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1024.0
+offset_bottom = -520.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_dnv5a")
+expand_mode = 1
+script = ExtResource("2_8ri50")
+metadata/_edit_use_anchors_ = true
+
+[node name="bg" type="TextureRect" parent="."]
+self_modulate = Color(0.359069, 0.359069, 0.359069, 1)
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_okxwt")
+expand_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="."]
+material = SubResource("ShaderMaterial_8ri50")
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.0
+offset_top = -64.0
+offset_right = 64.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.85, 0.85)
+pivot_offset = Vector2(64, 64)
+texture = ExtResource("2_1l8ld")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+self_modulate = Color(0.46482, 0.635521, 0.669434, 1)
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -48.0
+offset_right = 48.0
+grow_vertical = 0
+texture = ExtResource("7_dichm")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="TextureRect2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -5.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 39
+text = "F"
+horizontal_alignment = 1
+vertical_alignment = 1

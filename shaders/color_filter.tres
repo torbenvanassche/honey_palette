@@ -7,13 +7,13 @@ render_mode depth_prepass_alpha, cull_back;
 instance uniform vec4 tint_color : source_color = vec4(1.0, 1.0, 1.0, 1.0);
 instance uniform int color_mode : hint_enum(\"Grayscale\", \"Grayscale + Tint\", \"Tint Only\", \"Full Texture\") = 0;
 instance uniform bool is_invisible = false;
+instance uniform bool use_emission = false;
 
 uniform sampler2D albedo_texture : source_color;
 uniform sampler2D emission_texture : source_color;
 uniform sampler2D normal_texture : hint_normal;
 
 uniform bool tint_as_emission = false;
-uniform bool use_emission = false;
 
 void fragment() {
     if (is_invisible) {

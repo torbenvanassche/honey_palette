@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://dmncwx1rwhi5v"]
+[gd_scene load_steps=22 format=3 uid="uid://dmncwx1rwhi5v"]
 
 [ext_resource type="Script" uid="uid://d1exa3fqjyojx" path="res://scripts/manager.gd" id="1_bcnxi"]
 [ext_resource type="PackedScene" uid="uid://4y48an0tl5uq" path="res://scenes/game_scene.tscn" id="1_pw63i"]
@@ -17,6 +17,7 @@
 [ext_resource type="Material" uid="uid://cdtlutvw1gduh" path="res://materials/color_filter/color_filter_wall_11_A.tres" id="10_bcnxi"]
 [ext_resource type="PackedScene" uid="uid://cc1m2a1obsyn4" path="res://addons/fpc/character.tscn" id="11_e1cbu"]
 [ext_resource type="Material" uid="uid://c7p1d1sc1jmmw" path="res://materials/color_filter/hologram_01.tres" id="13_7nt27"]
+[ext_resource type="PackedScene" uid="uid://b1e5i6tb7sc21" path="res://scenes/ui/canvas_layer.tscn" id="18_bcnxi"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_pu3yx"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -35,7 +36,7 @@ glow_intensity = 0.77
 glow_strength = 1.32
 glow_blend_mode = 0
 
-[node name="main_scene" type="Node3D" node_paths=PackedStringArray("player")]
+[node name="main_scene" type="Node3D" node_paths=PackedStringArray("player", "ui")]
 script = ExtResource("1_bcnxi")
 player = NodePath("Character")
 shaders = Array[ShaderMaterial]([ExtResource("5_18nlu"), ExtResource("2_e1cbu"), ExtResource("4_6u1mn"), ExtResource("5_bcnxi"), ExtResource("6_18nlu"), ExtResource("4_c16ls"), ExtResource("6_01n6w"), ExtResource("9_7nt27"), ExtResource("7_6u1mn"), ExtResource("2_gubc5"), ExtResource("10_bcnxi"), ExtResource("8_mngbo"), ExtResource("9_4w45t"), ExtResource("13_7nt27")])
@@ -44,6 +45,7 @@ tint_colors = Dictionary[String, Color]({
 "green": Color(0.207843, 0.717647, 0.298039, 1),
 "red": Color(0.858824, 0.215686, 0, 1)
 })
+ui = NodePath("CanvasLayer")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_rt2n2")
@@ -57,3 +59,5 @@ shadow_normal_bias = 4.038
 
 [node name="Character" parent="." instance=ExtResource("11_e1cbu")]
 transform = Transform3D(0.938107, 0, -0.346346, 0, 1, 0, 0.346346, 0, 0.938107, 0.0887213, 0, 2.97095)
+
+[node name="CanvasLayer" parent="." instance=ExtResource("18_bcnxi")]

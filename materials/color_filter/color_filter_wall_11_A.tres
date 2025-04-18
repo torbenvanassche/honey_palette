@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=5 format=3 uid="uid://cdtlutvw1gduh"]
 
-[ext_resource type="Shader" uid="uid://clgt0a45gbdju" path="res://shaders/color_filter/color_filter.tres" id="1_ge1qp"]
+[ext_resource type="Shader" uid="uid://clgt0a45gbdju" path="res://shaders/color_filter.tres" id="1_ge1qp"]
 [ext_resource type="Texture2D" uid="uid://i67ru0pg2jlb" path="res://textures/color/Wall_11_A.png" id="2_ge1qp"]
 [ext_resource type="Texture2D" uid="uid://bc0ctqscnefw5" path="res://textures/emission/Wall_11_Emissive.png" id="3_kemja"]
 [ext_resource type="Texture2D" uid="uid://cemmqr6ovaaw6" path="res://textures/normal/Wall_11_Normals.png" id="4_qq4f7"]

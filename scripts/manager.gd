@@ -11,9 +11,11 @@ var red_group: Array[MeshInstance3D] = [];
 var green_group: Array[MeshInstance3D] = [];
 var blue_group: Array[MeshInstance3D] = [];
 
-@export var red_unlocked: bool = false;
-@export var green_unlocked: bool = false;
-@export var blue_unlocked: bool = false;
+var red_unlocked: bool = false;
+var green_unlocked: bool = false;
+var blue_unlocked: bool = false;
+
+@export var ui: Hotbar;
 
 func _init() -> void:
 	instance = self;
@@ -43,10 +45,13 @@ func _ready() -> void:
 	
 func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed(&"switch_blue") && blue_unlocked:
+		ui.blue.tint(true)
 		tint(blue_group); 
 	if Input.is_action_just_pressed(&"switch_green") && green_unlocked: 
+		ui.green.tint(true)
 		tint(green_group);
 	if Input.is_action_just_pressed(&"switch_red") && red_unlocked: 
+		ui.red.tint(true)
 		tint(red_group);
 
 func tint(meshes: Array[MeshInstance3D]) -> void:

@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://4y48an0tl5uq"]
+[gd_scene load_steps=32 format=3 uid="uid://4y48an0tl5uq"]
 
 [ext_resource type="PackedScene" uid="uid://b53x2faio571n" path="res://models/base/SM_Bld_Base_Floor_Combined_01.glb" id="1_onqr8"]
 [ext_resource type="PackedScene" uid="uid://da3taqvterwy4" path="res://models/prefab/container.tscn" id="3_85lt4"]
@@ -28,7 +28,6 @@
 [ext_resource type="PackedScene" uid="uid://b4xdtphing75j" path="res://models/prefab/door.tscn" id="25_xgstd"]
 [ext_resource type="PackedScene" uid="uid://babsc2pya2ijk" path="res://models/base/SM_Bld_Base_Pillar_01.glb" id="26_ttvoq"]
 [ext_resource type="PackedScene" uid="uid://c5vuv2srysibv" path="res://models/prefab/sm_dispenser.tscn" id="27_rw4oa"]
-[ext_resource type="PackedScene" uid="uid://cyun7wfpqov2n" path="res://models/pipes/SM_Bld_Pipe_Small_Bend_01.glb" id="30_bpk3j"]
 [ext_resource type="PackedScene" uid="uid://dm2g8t3g12qfo" path="res://models/prefab/color_recepticle.tscn" id="31_5dk4p"]
 [ext_resource type="PackedScene" uid="uid://djh8rcnv1xv68" path="res://models/pipes/SM_Prop_Pipe_Small_Adapter_01.glb" id="31_ngbhp"]
 [ext_resource type="PackedScene" uid="uid://ccpk7jgmebsj0" path="res://models/prefab/color_container.tscn" id="32_bpk3j"]
@@ -67,6 +66,8 @@ transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 5.29473, 0.526414, -
 
 [node name="laser_activation_lever" parent="laser puzzle" groups=["tint_red"] instance=ExtResource("23_pb36m")]
 transform = Transform3D(-1, 8.74228e-08, -3.82137e-15, 0, -4.37114e-08, -1, -8.74228e-08, -1, 4.37114e-08, 5.29215, 1.60472, -0.106373)
+can_interact = true
+once = false
 
 [node name="laser_origin" parent="laser puzzle" groups=["tint_red"] instance=ExtResource("10_r47aq")]
 transform = Transform3D(2, 0, 0, 0, -8.74228e-08, 2, 0, -2, -8.74228e-08, 4.0727, 0.522993, -0.0485402)
@@ -923,9 +924,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 3, -5)
 
 [node name="SM_Prop_TrashBin_012" parent="static_mesh/SM_Ground_2" instance=ExtResource("3_85lt4")]
 transform = Transform3D(-2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, 1.90983, 0.00809067, -1.48877)
+once = false
 
 [node name="SM_Prop_TrashBin_013" parent="static_mesh/SM_Ground_2" instance=ExtResource("3_85lt4")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 11.2396, -2.90925, 3.0791)
+once = false
 
 [node name="SM_Bld_Railing_Straight_014" parent="static_mesh" instance=ExtResource("8_b5spy")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.5, 0, -4.99165)
@@ -939,12 +942,6 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.5, 0
 [node name="SM_Bld_Railing_Pillar_Straight_020" parent="static_mesh" instance=ExtResource("15_77hjl")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.5, 0, -4.98781)
 
-[node name="SM_Bld_Pipe_Small_Bend_012" parent="static_mesh" instance=ExtResource("30_bpk3j")]
-transform = Transform3D(-1.09278e-08, -0.25, 0, 0.25, -1.09278e-08, 0, 0, 0, 0.25, -1.16039, 1.7619, 0.465305)
-
-[node name="SM_Prop_Pipe_Small_Adapter_012" parent="static_mesh" instance=ExtResource("31_ngbhp")]
-transform = Transform3D(0, 0, -0.2, 0, 0.2, 0, 0.2, 0, 0, -1.15683, 2.13279, 0.0852184)
-
 [node name="SM_Prop_Pipe_Small_Adapter_013" parent="static_mesh" instance=ExtResource("31_ngbhp")]
 transform = Transform3D(-7.70049e-09, 0, 0.176167, 0, 0.176167, 0, -0.176167, 0, -7.70049e-09, -1.19716, 2.11348, -0.149721)
 
@@ -957,11 +954,11 @@ transform = Transform3D(9.60591, 0, 0, 0, 1, 0, 0, 0, 1.82127, 2.44411, 2.92634,
 [node name="Node3D2" parent="." instance=ExtResource("7_kk2rg")]
 transform = Transform3D(9.99015, 0, 0, 0, 1, 0, 0, 0, 1.82127, 12.4441, -0.0736599, -3.69405)
 
-[node name="SM_Prop_Greebles_11_Split_Red" parent="." instance=ExtResource("31_5dk4p")]
+[node name="SM_Prop_Greebles_11_Split_Red" parent="." node_paths=PackedStringArray("follow_up_item") instance=ExtResource("31_5dk4p")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -1.29502, 1.61836, -0.0138582)
-
-[node name="SM_Prop_Greebles_24" parent="." instance=ExtResource("32_bpk3j")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.409892, 0.424371, -0.452207)
+follow_up_item = NodePath("../SM_Prop_Pill_Dispenser_013")
 
 [node name="SM_Prop_Greebles_25" parent="." instance=ExtResource("32_bpk3j")]
-transform = Transform3D(0.788097, 0.615551, 2.69066e-08, 0, -4.37114e-08, 1, 0.615551, -0.788097, -3.44488e-08, -0.535963, 0.116364, -0.746724)
+transform = Transform3D(0.172669, 0.98498, 4.30548e-08, 0, -4.37114e-08, 1, 0.98498, -0.172669, -7.54757e-09, -0.792009, 0.116364, -0.421962)
+interactable_id = "red_liquid_container"
+emission = true

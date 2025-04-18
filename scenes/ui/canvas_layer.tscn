@@ -1,0 +1,91 @@
+[gd_scene load_steps=8 format=3 uid="uid://b1e5i6tb7sc21"]
+
+[ext_resource type="Script" uid="uid://c52x7n0ybsbha" path="res://scripts/ui_controller.gd" id="1_frscm"]
+[ext_resource type="PackedScene" uid="uid://cdja14lggh1se" path="res://scenes/ui/ui_tile.tscn" id="1_nbmk3"]
+[ext_resource type="Texture2D" uid="uid://flkt0a7l7gfo" path="res://textures/ui/ICON_SM_Prop_Vendor_Product_03_SciFiWorlds.png" id="3_1r0hm"]
+[ext_resource type="Texture2D" uid="uid://cais1ojik62n0" path="res://textures/ui/ICON_SM_Prop_Vendor_Product_03_SciFiWorlds_mask.png" id="4_2vywx"]
+[ext_resource type="Texture2D" uid="uid://b1q7o6hs1cllo" path="res://textures/ui/ICON_SciFi_Input_PC_Mouse_Left.png" id="4_mmkdq"]
+[ext_resource type="Texture2D" uid="uid://eqifpdrgspgx" path="res://textures/ui/ICON_SM_Prop_Pill_Bottle_03_SciFiCyberCity.png" id="5_nnae4"]
+[ext_resource type="Texture2D" uid="uid://o02ayqqg2d4v" path="res://textures/ui/ICON_SM_Prop_Pill_Bottle_03_SciFiCyberCity_mask.png" id="7_errwt"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_frscm")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.5, 0.5)
+size_flags_vertical = 8
+
+[node name="MarginContainer" type="MarginContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -290.0
+offset_top = -150.0
+offset_right = 290.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_bottom = 10
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 5
+
+[node name="container_variant" parent="Control/MarginContainer/HBoxContainer" instance=ExtResource("1_nbmk3")]
+layout_mode = 2
+expand_mode = 3
+tex = ExtResource("3_1r0hm")
+mask = ExtResource("4_2vywx")
+color = Color(1, 0.152941, 0.266667, 1)
+
+[node name="TextureRect3" type="TextureRect" parent="Control/MarginContainer/HBoxContainer/container_variant"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 7.0
+offset_top = -43.0
+offset_right = 42.0
+offset_bottom = -8.0
+grow_vertical = 0
+texture = ExtResource("4_mmkdq")
+expand_mode = 1
+
+[node name="VSeparator" type="VSeparator" parent="Control/MarginContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="container_red" parent="Control/MarginContainer/HBoxContainer" instance=ExtResource("1_nbmk3")]
+layout_mode = 2
+expand_mode = 3
+tex = ExtResource("5_nnae4")
+mask = ExtResource("7_errwt")
+color = Color(1, 0, 0, 1)
+keybind = "1"
+
+[node name="container_green" parent="Control/MarginContainer/HBoxContainer" instance=ExtResource("1_nbmk3")]
+layout_mode = 2
+expand_mode = 3
+tex = ExtResource("5_nnae4")
+mask = ExtResource("7_errwt")
+color = Color(0, 1, 0, 1)
+keybind = "2"
+
+[node name="container_blue" parent="Control/MarginContainer/HBoxContainer" instance=ExtResource("1_nbmk3")]
+layout_mode = 2
+expand_mode = 3
+tex = ExtResource("5_nnae4")
+mask = ExtResource("7_errwt")
+color = Color(0, 0, 1, 1)
+keybind = "3"

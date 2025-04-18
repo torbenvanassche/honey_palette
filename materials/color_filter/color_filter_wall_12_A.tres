@@ -1,12 +1,12 @@
 [gd_resource type="ShaderMaterial" load_steps=4 format=3 uid="uid://caqvbi5xsbcai"]
 
-[ext_resource type="Shader" uid="uid://clgt0a45gbdju" path="res://shaders/color_filter/color_filter.tres" id="1_aabv3"]
+[ext_resource type="Shader" uid="uid://clgt0a45gbdju" path="res://shaders/color_filter.tres" id="1_m268k"]
 [ext_resource type="Texture2D" uid="uid://dw5g3mbk1wstg" path="res://textures/color/Wall_12_A.png" id="2_m268k"]
 [ext_resource type="Texture2D" uid="uid://dwh8bv8htsrb" path="res://textures/normal/Wall_12_Normals.png" id="3_aabv3"]
 
 [resource]
 render_priority = 0
-shader = ExtResource("1_aabv3")
+shader = ExtResource("1_m268k")
 shader_parameter/albedo_texture = ExtResource("2_m268k")
 shader_parameter/normal_texture = ExtResource("3_aabv3")
 shader_parameter/tint_as_emission = false

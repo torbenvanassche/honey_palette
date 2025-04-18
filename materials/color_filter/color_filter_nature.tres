@@ -1,9 +1,9 @@
 [gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://chcl2tcqk3q35"]
 
-[ext_resource type="Shader" uid="uid://clgt0a45gbdju" path="res://shaders/color_filter/color_filter.tres" id="1_v004t"]
+[ext_resource type="Shader" uid="uid://clgt0a45gbdju" path="res://shaders/color_filter.tres" id="1_xpdav"]
 
 [resource]
 render_priority = 0
-shader = ExtResource("1_v004t")
+shader = ExtResource("1_xpdav")
 shader_parameter/tint_as_emission = false
 shader_parameter/use_emission = false

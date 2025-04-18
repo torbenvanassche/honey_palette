@@ -1,11 +1,11 @@
 [gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://bqe0ytb7a25v"]
 
-[ext_resource type="Shader" uid="uid://clgt0a45gbdju" path="res://shaders/color_filter/color_filter.tres" id="1_22dth"]
+[ext_resource type="Shader" uid="uid://clgt0a45gbdju" path="res://shaders/color_filter.tres" id="1_cbm60"]
 [ext_resource type="Texture2D" uid="uid://djvm6yv651ksw" path="res://textures/color/Brick_01_B.png" id="2_cbm60"]
 
 [resource]
 render_priority = 1
-shader = ExtResource("1_22dth")
+shader = ExtResource("1_cbm60")
 shader_parameter/albedo_texture = ExtResource("2_cbm60")
 shader_parameter/tint_as_emission = false
 shader_parameter/use_emission = false
